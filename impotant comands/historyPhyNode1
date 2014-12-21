@@ -1,0 +1,851 @@
+    1  sudo su
+    2  ifconfig
+    3  ls
+    4  rm setupHostsFile.sh 
+    5  sudo sh setupHostsFile.sh 
+    6  exit
+    7  sh setupCluster_client.sh 
+    8  sudo nano /etc/fstab
+    9  exit
+   10  cat /etc/fstab
+   11  sudo su
+   12  sudo gedit /etc/default/grub
+   13  sudo update-grub
+   14  sudo apt-get install nfs-common
+   15  lscpu
+   16  grep -E (vmx|svm|0xc0f) --color=always/proc/cpuinfo
+   17  grep --help
+   18  egrep (vmx|svm|0xc0f) --color=always/proc/cpuinfo
+   19  grep -E "(vmx|svm|0xc0f)" --color=always/proc/cpuinfo
+   20  grep -E "(vmx|svm|0xc0f)" --color=always/proc/cpuinfo 
+   21  grep -E "(vmx|svm|0xc0f)" --color=always/proc/cpuinfo
+   22  grep -E "(vmx|svm|0xc0f)"
+   23  grep -E "(vmx|svm|0xc0f)" --color=always/proc/cpuinfo
+   24  grep -E "(vmx|svm|0xc0f)" --color=always /proc/cpuinfo
+   25  sudo apt-get install qemu-kvm 
+   26  sudo apt-get install qemu-kvm li
+   27  sudo apt-get install qemu-kvm libvirt-bin
+   28  sudo apt-get install libvirt-dev
+   29  sudo apt-get install libvirt-doc
+   30  sudo apt-get install virt-viewer 
+   31  sudo apt-get virt-manager
+   32  sudo apt-get install virt-manager virtinst 
+   33  sudo apt-get install libguestfs-tools
+   34  sudo apt-get install libvirt-bin
+   35  libvirt -d
+   36  libvirt
+   37  libvirtd -d
+   38  virt
+   39  logout
+   40  gedit hi.c
+   41  vim g.c
+   42  sudo apt-get install vim
+   43  whoiam
+   44  whoami
+   45  vim g.c
+   46  gcc g.c
+   47  ./a.out
+   48  lscpu
+   49  lscpu |grep virtl
+   50  sudo apt-get install virtinst
+   51  sudo apt-get install virt-viewer
+   52  sudo apt-get install virt-vmanager
+   53  sudo apt-get autoresource
+   54  dpk --list | grep packagename
+   55  dpkg --list | grep packagename
+   56  dpkg --list | grep virtinrt
+   57  dpkg --list | grep virtinst
+   58  ls -l
+   59  ls -l -h
+   60  ls -l -human
+   61  sudo virt-manager
+   62  sudo apt-get install flashplugin-installer 
+   63  virsh
+   64  ifconfig
+   65  gedit default1.xml
+   66  exit
+   67  ifconfig
+   68  vis
+   69  virsh
+   70  virsh list all
+   71  virsh list -all
+   72  virsh list --all
+   73  libvit -l
+   74  libvirt -l
+   75  bsctrl sow
+   76  brctrl sow
+   77  sudo ap-get intall bridge-utils
+   78  sudo apt-get intall bridge-utils
+   79  sudo apt-get install bridge-utils
+   80  brctl show
+   81  sudo virsh net-dumpxml default
+   82  sudo virsh net-dumpxml default >> default1.xml
+   83  vi default1.xml
+   84  cat default1.xml
+   85  sudo stop network-manager
+   86  sudo ifdown etho
+   87  sudo gedit /etc/network/interfaces
+   88  sudo virsh net-dumpxml default
+   89  virsh list --all
+   90  virsh start killdeadpeople
+   91  virsh stop killdeadpeople
+   92  virsh shutdown killdeadpeople
+   93  virsh dumpxml killdeadpeople >> virtual.xml
+   94  gedit virtual.xml
+   95  hcp
+   96  history
+   97  su - hadoopuser
+   98  users
+   99  su - hduser
+  100  su
+  101  sudo su
+  102  exit
+  103  ifconfig
+  104  showmount -e 172.0.86.11
+  105  showmount -e 172.50.86.11
+  106  sudo mount -t nfs 172.50.86.11:/home/admin-17/Desktop/cloudProject /home/csisadmin/Desktop/cloudProject
+  107  gedit /etc/fstab
+  108  sudo nano /etc/fstab
+  109  getmac
+  110  netconfig
+  111  ipconfig
+  112  exit
+  113  virsh -c qemu:///sstm list
+  114  virsh -c qemu:///system list
+  115  sudo apt-get install qemu-kvm
+  116  sudo apt-get install libvirt-bin
+  117  cd Desktop/
+  118  cd sample\ progs/
+  119  gcc -g -Wall try.c -o ex -lvirt
+  120  ./a.out
+  121  ./ex
+  122  gcc -g -Wall try.c -o try -lvirt
+  123  ./try
+  124  gcc -g -Wall try.c -o try -lvirt
+  125  clear
+  126  gcc -g -Wall try.c -o try -lvirt
+  127  clear
+  128  gcc -g -Wall try.c -o try -lvirt
+  129  clear
+  130  gcc -g -Wall try.c -o try -lvirt
+  131  clear
+  132  gcc -g -Wall try.c -o try -lvirt
+  133  clear
+  134  gcc -g -Wall try.c -o try -lvirt
+  135  clear
+  136  gcc -g -Wall try.c -o try -lvirt
+  137  clear
+  138  gcc -g -Wall try.c -o try -lvirt
+  139  ./try
+  140  gcc -g -Wall try.c -o try -lvirt
+  141  ./try
+  142  gcc -g -Wall try.c -o try -lvirt
+  143  ./try
+  144  clear
+  145  gcc -g -Wall try.c -o try -lvirt
+  146  exit
+  147  virt-manager
+  148  exit
+  149  ifconig
+  150  ipconfig
+  151  ifconfig
+  152  pwd
+  153  cd Desktop/
+  154  mkdir mpicloud2
+  155  cd mpicloud2/
+  156  wgets https://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.1.tar.gz
+  157  wget https://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.1.tar.gz
+  158  sudo apt-get install libibnetdisc-dev
+  159  tar -xvf openmpi-1.8.1.tar.gz 
+  160  cd openmpi-1.8.1/
+  161  ./configure --prefix="/home/$USER/.openmpi"
+  162  make
+  163  sudo make install
+  164  make --prefix="/home/$USER/.openmpi"
+  165  mpicc
+  166  cd /home/csisadmin/Desktop/cl
+  167  --------cd /hocd home
+  168  cd /home
+  169  cd /Desktop/cl
+  170  cd 
+  171  cd Desktop/cl
+  172  cd /home/csisadmin/Desktop
+  173  -cd cl
+  174  cd cl
+  175  -----logout
+  176  ----------------------------------
+  177  cd cl
+  178  stop
+  179  mpiun
+  180  mpirun
+  181  mpicc
+  182  cd $HOME/ .ssh
+  183  pwd
+  184  cd ..
+  185  d ..
+  186  cd ..
+  187  d $HOME/ .ssh
+  188  d $HOME/.ssh
+  189  cd $HOME/.ssh
+  190  pwd
+  191  virt-manager
+  192  eit
+  193  virt-manager
+  194  virsh net-list\
+  195  virsh net-list
+  196  virsh net-destroy default
+  197  virsh net-list
+  198  cd Desktop/
+  199  l
+  200  virsh net-define default.xml 
+  201  virsh net-undefine default
+  202  virsh net-define default.xml 
+  203  virsh net-start default
+  204  virsh net-list
+  205  virsh define newXML.xml
+  206  virt-manager
+  207  virsh define newXML.xml
+  208  cp bestVM.img 
+  209  cp bestVM.img .
+  210  cp bestVM.img copyVMImages/
+  211  sudo cp bestVM.img copyVMImages/
+  212  sudo mod 777 bestVM.img 
+  213  sudo chmod 777 bestVM.img 
+  214  virsh define newXML3.xml 
+  215  virsh define newXML2.xml
+  216  virsh define newXML3.xml
+  217  ifconfig
+  218  virsh define newXML3.xml
+  219  virsh net-destroy defakt
+  220  virsh net-destroy default
+  221  virsh ne-undefine default
+  222  virsh net-undefine default
+  223  virsh net-define default.xml
+  224  virsh net-start default
+  225  virsh define newXML.xml
+  226  virsh define newXML2.xml
+  227  virsh define newXML3.xml
+  228  history
+  229  unVM.sj
+  230  unVM.sha
+  231  unVM.sh
+  232  ./unVM.sh
+  233  sudo ./unVM.sh
+  234  chmod +x unVM.sh
+  235  mod + unVM2.sh 
+  236  chmod + unVM2.sh 
+  237  ./unVM.sh 
+  238  ./unVM2.sh 
+  239  suo ./unVM2.sh 
+  240  sudo ./unVM2.sh 
+  241  chmod + unVM2.sh 
+  242  chmod +x unVM2.sh 
+  243  ./unVM2.sh 
+  244  ./unVM.sh
+  245  chmod +x resize.sh
+  246  ./resize.sh 
+  247  chmod +x resize.sh
+  248  ./resize.sh 
+  249  ./unVM.sh
+  250  ifconfig
+  251  virsh define newXML.xml
+  252  virt-manager
+  253  sudo virt-manager
+  254  virsh lit
+  255  virsh list --all
+  256  virt-manager
+  257  virsh define newXML2.xml
+  258  ifconfig
+  259  ssh vm@172.50.86.21
+  260  ssh csisadmin@172.50.86.21
+  261  ifconfig
+  262  logout
+  263  virsh net-list
+  264  virsh net-start default
+  265  cd Desktop/
+  266  ls
+  267  virsh define newXML.xml
+  268  locate *.img
+  269  locate .img
+  270  chmod 777 new.im
+  271  chmod 777 new.img
+  272  sudo chmod 777 new.img
+  273  virsh define newXML2.xml
+  274  scp default.xml admin-17@172.50.86.17:.
+  275  scp default.xml admin-17@172.50.86.38:.
+  276  ifconfig
+  277  virsh define newXML.xml
+  278  history
+  279  ./unVM.sh
+  280  virsh net-list
+  281  virsh ne-undefine
+  282  virsh net-undefine default
+  283  virsh net-destroy default
+  284  cd Desktop/
+  285  virsh net-define default.xml
+  286  virsh net-start default\
+  287  virsh net-start default
+  288  virsh net-list
+  289  ./unVM.sh
+  290  ifconfig
+  291  ssh vm@192.168.122.152
+  292  virsh nodedev-list --cap vports
+  293  gedit /var/lib/libvirt/network/default.xml &
+  294  sudo gedit /var/lib/libvirt/network/default.xml 
+  295  xit
+  296  exit
+  297  ls
+  298  gedit g.
+  299  gedit g.c
+  300  gedit virtual.xml
+  301  cd workspace
+  302  ls
+  303  exi
+  304  cd ..
+  305  ls
+  306  cd ABRSS/
+  307  ls
+  308  gedit Prompt.c
+  309  gedit Prompt.java
+  310  exit
+  311  virsh 
+  312  cd Desktop/poojaAkankshaCloud/
+  313  g++ modifyXML.cpp 
+  314  sudo apt-get install g++
+  315  g++ modifyXML.cpp 
+  316  locate modifML.pp\
+  317  locate modifML.pp
+  318  locate modifyXML.cpp
+  319  locate modify
+  320  locate modify|rep cpp
+  321  locate modify|grep cpp
+  322  cd Desktop/poojaAkankshaCloud/source\ code/
+  323  ./unVM.sh 
+  324  scp /home/csisadmin/Desktop/hello_world.c vm@192.168.122.11:.
+  325  scp /home/csisadmin/Desktop/hello_world.c vm@192.168.122.12:/home/vm/Desktop
+  326  ./unVM.sh 
+  327  ./unVM.sh
+  328  cd Desktop/
+  329  ls
+  330  gedit hello_world.c 
+  331  cd Desktop/poojaAkankshaCloud/
+  332  g++ modifyXML.cpp
+  333  ./a.out > configLocation.txt
+  334  g++ modifyXML.cpp
+  335  ./a.out
+  336  g++ modifyXML.cpp
+  337  ./a.out > configLocation.txt 
+  338  g++ init.cpp
+  339  ./a.out > configLocation.txt 
+  340  g++ modifyXML.cpp
+  341  ./a.out 
+  342  g++ init.cpp
+  343  ./a.out > configLocation.txt 
+  344  g++ modifyXML.cpp
+  345  ./a.out 
+  346  g++ init.cpp
+  347  ./a.out > configLocation.txt 
+  348  g++ modifyXML.cpp
+  349  ./a.out 
+  350  g++ modifyXML.cpp
+  351  ./a.out 
+  352  g++ modifyXML.cpp
+  353  ./a.out 
+  354  g++ modifyXML.cpp
+  355  ./a
+  356  ./a.out 
+  357  g++ modifyXML.cpp
+  358  ./a.out 
+  359  g++ modifyXML.cpp
+  360  ./a.out 
+  361  g++ modifyXML.cpp
+  362  ./a.out 
+  363  g++ modifyXML.cpp
+  364  ./a.out 
+  365  g++ modifyXML.cpp
+  366  ./a.out 
+  367  g++ modifyXML.cpp
+  368  ./a.out 
+  369  g++ modifyXML.cpp
+  370  ./a.out 
+  371  g++ modifyXML.cpp
+  372  ./a.out 
+  373  g++ modifyXML.cpp
+  374  ./a.out 
+  375  g++ modifyXML.cpp
+  376  ./a.out 
+  377  g++ modifyXML.cpp
+  378  ./a.out 
+  379  g++ modifyXML.cpp
+  380  ./a.out < cluster1
+  381  g++ modifyXML.cpp
+  382  ./a.out < cluster1
+  383  g++ modifyXML.cpp
+  384  ./a.out < cluster1
+  385  scp hostfile.txt vm@192.168.122.11:.
+  386  virsh list
+  387  virsh start VM200
+  388  virsh list
+  389  virsh shutdown VM200
+  390  virsh list
+  391  virsh suspend VM200
+  392  virsh destroy VM200
+  393  g++ modifyXML.cpp
+  394  ./a.out < cluster1
+  395  virsh list
+  396  g++ modifyXML.cpp
+  397  ./a.out < cluster1
+  398  virsh list
+  399  virt-manager
+  400  ifconfig
+  401  g++ roundRobin.cpp
+  402  virsh cpu-stats VM100
+  403  virsh cpu-stats VM200
+  404  virsh cpu-stats VM100
+  405  virsh cpu-stats --all
+  406  virsh cpu-stats --help
+  407  virsh cpu-stats --total
+  408  virsh migrate --p2p --tunnelled VM100 qemu+ssh://172.50.86.27
+  409  virsh migrate --live VM100 172.50.86.27
+  410  virsh migrate --p2p --tunnelled VM100 qemu+ssh://csisadmin@172.50.86.27
+  411  virsh connec
+  412  virsh connect
+  413  virsh list
+  414  virt-install --connect=qemu:///system
+  415  virsh destroy VM100
+  416  virsh destroy VM200
+  417  virsh -c qemu+ssh://172.50.86.27 define default.xml 
+  418  virsh list
+  419  virsh list --all
+  420  ps
+  421  ps aux
+  422  ps aux | grep virt
+  423  ls
+  424  ./a.out < cluster1
+  425  cat hostfile.txt
+  426  cd Desktop/poojaAkankshaCloud/deliverable/
+  427  ls
+  428  cd src/
+  429  ls
+  430  g++ roundRobin.cpp 
+  431  g++ minLoadedNode.cpp
+  432  ./a.out 
+  433  ifconfig
+  434  ssh csisadmin@172.0.86.22
+  435  virsh list --all
+  436  virsh list
+  437  ifconfig
+  438  cd Desktop/poojaAkankshaCloud/
+  439  ls
+  440  scp -r deliverable/ hduser@172.50.86.22
+  441  cd /home/csisadmin/poojaAkankshaCloud
+  442  g++ modifyXML.cpp
+  443  g++ modifyXML.cpp -o createVM
+  444  ./createVM 
+  445  virsh list
+  446  virsh connec
+  447  virsh connect
+  448  virsh connect --help
+  449  virsh connect 
+  450  virsh connect qemu:///system
+  451  virsh list
+  452  virsh -c
+  453  virsh -c qemu:///system
+  454  virsh -connect qemu
+  455  virsh -connect qemu:///system
+  456  virsh -c test:///default list
+  457  virsh -c 
+  458  virsh -c test:///default
+  459  virsh -c qemu:///system 
+  460  virsh -c qemu:///system lis
+  461  virsh -c qemu:///system list
+  462  cd poojaAkankshaCloud/deliverable/
+  463  cd ..
+  464  g++ modifyXML.cpp
+  465  g++ modifyXML.cpp -o createVM
+  466  ./createVM
+  467  g++ init.cpp -o init
+  468  ./init > configLocation.txt 
+  469  g++ init.cpp -o init
+  470  ./init > configLocation.txt 
+  471  g++ modifyXML.cpp -o createVM
+  472  ./createVM
+  473  g++ init.cpp -o init
+  474  ./init > configLocation.txt 
+  475  g++ modifyXML.cpp -o createVM
+  476  ./init > configLocation.txt 
+  477  ./createVM < cluster1
+  478  virsh list
+  479  cd poojaAkankshaCloud/
+  480  ls
+  481  gedit roundRobin.cpp &
+  482  sudo gedit roundRobin.cpp 
+  483  scp roundRobin.cpp hduser@172.50.86.28:.
+  484  ifconfig
+  485  cd poojaAkankshaCloud/
+  486  ls
+  487  scp roundRobin.cpp csisadmin@172.50.86.22:.
+  488  scp roundRobin.cpp hduser@172.50.86.22:.
+  489  scp minLoadedNode.cpp hduser@172.50.86.22:.
+  490  scp physicalInfrastructure hduser@172.50.86.22:.
+  491  cd deliverable/src/
+  492  scp roundRobin.cpp hduser@172.50.86.22:.
+  493  scp minLoadedNode.cpp hduser@172.50.86.22:.
+  494  scp physicalInfrastructure  hduser@172.50.86.22:.
+  495  scp VMsAllottedTillNow   hduser@172.50.86.22:.
+  496  logout
+  497  ifconfig
+  498  ifconfig
+  499  sudo apt-get install nfs-common
+  500  sudo nano /etc/fstab
+  501  sudo gedit /etc/fstab
+  502  sudo mkdir /mnt/kvmshared
+  503  sudo mount 172.50.86.22:/mnt/kvmshared /home/csisadmin/Desktop/cloudProject
+  504  ping 172.50.86.27
+  505  sudo mount 172.50.86.22:/mnt/kvmshared /home/csisadmin/Desktop/cloudProject
+  506  sudo gedit /etc/fstab
+  507  sudo mount 172.50.86.27:/mnt/kvmshared /var/lib/libvirt/images
+  508  ifonfig
+  509  ifconfig
+  510  ls
+  511  logout
+  512  cd poojaAkankshaCloud/
+  513  logout
+  514  cd poojaAkankshaCloud/
+  515  ./createVM
+  516  logout
+  517  sudo chmod 777 poojaAkankshaCloud/
+  518  logout
+  519  cd poojaAkankshaCloud/
+  520  l
+  521  ./createVM 
+  522  gedit counter.txt
+  523  nano counter.txt
+  524  logout
+  525  cd poojaAkankshaCloud/
+  526  nano counter.txt
+  527  virt-manager
+  528  sudo virt-manager
+  529  virsh list
+  530  virsh destroy VM100
+  531  virsh destroy VM200
+  532  nano modifyXML.cpp
+  533  g++ modifyXML.cpp -o createVM 
+  534  virsh list
+  535  nano counter.txt
+  536  virsh list
+  537  virsh start VM100
+  538  virsh list
+  539  nano r1.xml 
+  540  g++ modifyXML.cpp
+  541  nano modifyXML.cpp
+  542  g++ modifyXML.cpp
+  543  nano modifyXML.cpp
+  544  g++ modifyXML.cpp
+  545  nano modifyXML.cpp
+  546  g++ modifyXML.cpp
+  547  g++ modifyXML.cpp -o createVM 
+  548  virsh list
+  549  nano counter.txt
+  550  logout
+  551  ifconfig
+  552  virsh list
+  553  virsh destroy VM100
+  554  virsh list --all
+  555  virsh start VM100
+  556  virsh start VM200
+  557  virsh list --all
+  558  cd poojaAkankshaCloud/
+  559  virsh define newXML.xml
+  560  ifonfig
+  561  ifconfig
+  562  sudo cp newXML.xml /media/csisadmin/New Volume
+  563  sudo cp newXML.xml /media/csisadmin/New\ Volume
+  564  scp newXML.xml csisadmin@172.50.86.46:.
+  565  g++ init.cpp -o init
+  566  ./init
+  567  g++ init.cpp -o init
+  568  ./init
+  569  g++ modifyXML.cpp
+  570  ./a.out 
+  571  ./a.out 1 1000
+  572  g++ init.cpp -o init
+  573  ./init > configLocation.txt 
+  574  g++ modifyXML.cpp
+  575  ./a.out 1 1000
+  576  g++ init.cpp -o init
+  577  ./init > configLocation.txt 
+  578  g++ modifyXML.cpp
+  579  ./a.out 1 1000
+  580  g++ init.cpp -o init
+  581  ./init > configLocation.txt 
+  582  g++ modifyXML.cpp
+  583  ./a.out 1 100
+  584  cd poojaAkankshaCloud/
+  585  g++ modifyXML.cpp -o createVM
+  586  ls
+  587  cd poojaAkankshaCloud/
+  588  ls
+  589  logout
+  590  ifconfig
+  591  sudo chmod 777 /var/lib/libvirt/images/
+  592  ls
+  593  virsh migrate --live --undefinesource vm000 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  594  scp /home/csisadmin/Desktop/prerna\ cloud_old/vm_migrate csisadmin@172.50.86.27:.
+  595  ifconfig
+  596  sudo cp poojaAkankshaCloud/vm1.img /var/lib/libvirt/images/
+  597  sudo chmod 777 poojaAkankshaCloud/vm1.img 
+  598  sudo nano /etc/fstab
+  599  sudo mount 172.50.86.27:/mnt/kvmshared /mnt/kvmshared
+  600  gedit /etc/network/interfaces
+  601  cd poojaAkankshaCloud/
+  602  virsh define r1.xml 
+  603  virsh list
+  604  virsh cpu-stats 41
+  605  cd poojaAkankshaCloud/
+  606  nano counter.txt
+  607  virsh list
+  608  virsh destroy VM100
+  609  virsh list
+  610  nano modifyXML.cpp
+  611  virsh list
+  612  nano r1.xml 
+  613  virsh list
+  614  nano modifyXML.cpp
+  615  g++ modifyXML.cpp
+  616  g++ modifyXML.cpp -o createVM 
+  617  nano modifyXML.cpp
+  618  rm r1.xml 
+  619  ls
+  620  nano modifyXML.cpp
+  621  g++ modifyXML.cpp -o createVM 
+  622  nano modifyXML.cpp
+  623  g++ modifyXML.cpp -o createVM 
+  624  nano modifyXML.cpp
+  625  g++ modifyXML.cpp -o createVM 
+  626  nano modifyXML.cpp
+  627  g++ modifyXML.cpp -o createVM 
+  628  nano modifyXML.cpp
+  629  nano counter.txt
+  630  g++ modifyXML.cpp -o createVM 
+  631  virsh destroy VM100
+  632  nano counter.txt
+  633  nano modifyXML.cpp
+  634  virsh migrate --live --undefinesource 5 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  635  virsh list
+  636  cd /mnt/kvmshared/
+  637  ls
+  638  locate findCPUtime.pp
+  639  virsh list cpu-stats vm100
+  640  virsh cpu-stats vm100
+  641  virsh cpu-stats VM100
+  642  virsh list
+  643  chmod +x cpu_usage 
+  644  ./cpu_usage 
+  645  cd poojaAkankshaCloud/
+  646  ./createVM 
+  647  ./createVM 2 1000
+  648  ./cpu_usage 
+  649  locate roundRobin.cpp
+  650  ifconfig
+  651  sudo gedit /etc/fstab
+  652  sudo mount 172.50.86.27:/mnt/kvmshared /mnt/kvmshared
+  653  cd /mnt/kvmshared/poojaAkankshaCloud/
+  654  g++ modifyXML.cpp -o createVM 
+  655  ./createVM 2 100 luster1
+  656  g++ modifyXML.cpp -o createVM 
+  657  ./createVM 2 100 luster1
+  658  g++ modifyXML.cpp -o createVM 
+  659  ./createVM 2 100 luster1
+  660  g++ modifyXML.cpp -o createVM 
+  661  ./createVM 2 100 luster1
+  662  g++ modifyXML.cpp -o createVM 
+  663  ./createVM 2 100 luster1
+  664  g++ modifyXML.cpp -o createVM 
+  665  ./createVM 2 100 luster1
+  666  g++ modifyXML.cpp -o createVM 
+  667  ./createVM 2 100 luster1
+  668  g++ modifyXML.cpp -o createVM 
+  669  ./createVM 2 100 luster1
+  670  g++ modifyXML.cpp -o createVM 
+  671  ./createVM 2 100 luster1
+  672  g++ modifyXML.cpp -o createVM 
+  673  ./createVM 2 100 luster1
+  674  g++ modifyXML.cpp -o createVM 
+  675  ./createVM 2 100 luster1
+  676  g++ modifyXML.cpp -o createVM 
+  677  ./createVM 2 100 luster1
+  678  g++ modifyXML.cpp -o createVM 
+  679  ./createVM 2 100 luster1
+  680  g++ modifyXML.cpp -o createVM 
+  681  ./createVM 2 100 luster1
+  682  g++ modifyXML.cpp -o createVM 
+  683  ./createVM 2 100 luster1
+  684  g++ modifyXML.cpp -o createVM 
+  685  ./createVM 2 100 luster1
+  686  g++ modifyXML.cpp -o createVM 
+  687  snapshot-create VM100 /home/csisadmin/r1.xml 
+  688  virsh snapshot-create VM100 /home/csisadmin/r1.xml 
+  689  virsh snapshot
+  690  virsh snapshot-create
+  691  virsh snapshot-create VM100
+  692  virsh net-list
+  693  cd poojaAkankshaCloud/
+  694  ./createVM 2 1000
+  695  gedit cpu_usage 
+  696  gedit cpu_usage &
+  697  ./cpu_usage
+  698  top -bn1 | grep "Cpu(s)" |            sed "s/.*, *\([0-9.]*\)%* id.*/\1/" |            awk '{print 100 - $1"%"}'
+  699  chmod +x cpuUsage.sh 
+  700  ./cpuUsage.sh
+  701  cat usageStat 
+  702  sudo chmod 777 /mnt/kvmshared/
+  703  virsh deine r2.xml 
+  704  virsh define r2.xml 
+  705  chmod +x checkpoint 
+  706  ./checkpoint 
+  707  scp /etc/network/interfaces 172.50.86.46:.
+  708  history
+  709  history| etc/network/interfaces
+  710  virsh deine r2.xml 
+  711  virsh define r2.xml 
+  712  chmod +x checkpoint 
+  713  ./checkpoint 
+  714  scp /etc/network/interfaces 172.50.86.46:.
+  715  history
+  716  history| etc/network/interfaces
+  717  history| grep etc/network/interfaces
+  718  virsh snapshot-create vm
+  719  virsh snapshot-create VM100
+  720  ./checkpoint 
+  721  sudo aa-complain /usr/sbin/libvirtd
+  722  sudo aa-status
+  723  virsh snapshot-create VM100
+  724  sudo aa-status
+  725  sudo aa-enforce /etc/apparmor.d/libvirt/libvirt-10004a35-bbb5-5c6c-7f3b-7164a2c4aa31
+  726  sudo aa-enforce /etc/apparmor.d/libvirt/libvirt-20004a35-bbb5-5c6c-7f3b-7164a2c4aa31
+  727  virsh snapshot-create VM100
+  728  sudo aa-status
+  729  sudo aa-enforce /usr/sbin/libvirtd
+  730  virsh snapshot-create VM100
+  731  ifconfig
+  732  sudo aa-status
+  733  virsh snapshot-create VM100
+  734  virsh snapshot-create-as vm vm1snap --memspec /var/tmp/vm1snap
+  735  virsh snapshot-create-as VM100 vm1snap --memspec /var/tmp/vm1snap
+  736  sudo virsh snapshot-create-as VM100 vm1snap --memspec /var/tmp/vm1snap
+  737  sudo virsh snapshot-create-as VM100 vm1snap --memspec .
+  738  sudo virsh snapshot-create-as VM100 vm1snap 
+  739  chmod 777 /var/tmp/
+  740  sudo chmod 777 /var/tmp/
+  741  sudo virsh snapshot-create-as VM100 vm1snap --memspec /var/tmp/vm1snap
+  742  cd /var/lib/libvirt/images/
+  743  ls
+  744  cd /var/lib/libvirt/images/
+  745  sudo ls
+  746  sudo virsh snapshot-create-as VM100 vm1snap --memspec /var/tmp/vm1snap
+  747  top -bn1
+  748  top -bn1 | grep "Cpu(s)"
+  749  top -bn1 | grep "Cpu(s)" |            sed "s/.*, *\([0-9.]*\)%* id.*/\1/" 
+  750  virsh list | grep running | sed "s/.*([VM].*0).*/\1/" | awk '{print $1}'
+  751  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}'
+  752  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}' << domainNames
+  753  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}' >> domainNames
+  754  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}'
+  755  virsh cpu-stats VM200
+  756  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}' | wc -l
+  757  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | wc -l >>domainNames | awk '{print $1}' >> domainNames
+  758  gedit domainNames 
+  759  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}' >> domainNames | wc -l >>domainNames
+  760  gedit domainNames 
+  761  cd poojaAkankshaCloud/
+  762  g++ ./findCPUtime.cpp
+  763  g++ findCPUtime.cpp
+  764  ./a.out 
+  765  sudo chmod +x domainName.sh
+  766  ./domainName.sh
+  767  g++ findCPUtime.cpp
+  768  ./a.out 
+  769  gedit cpuStats.txt 
+  770  g++ findCPUtime.cpp
+  771  ./a.out 
+  772  virsh cpu-stats VM100
+  773  virsh list
+  774  virsh cpu-stats 5
+  775  virsh cpu-stats 6
+  776  virsh list | grep running | sed "s/\([0-9]*\) .*/\1/" | awk '{print $1}' >> domainID
+  777  gedit domain
+  778  gedit domainID
+  779  virsh list | grep running | sed "s/\([0-9]*\) .*/\1/" | awk '{print $1}'
+  780  virsh list | grep running
+  781  virsh list | grep running | sed "s/ \([0-9]*\) .*/\1/" | awk '{print $1}'
+  782  chmod +x domainID.sh
+  783  ./domainID.sh 
+  784  g++ findCPUtime.cpp
+  785  ./a.out 
+  786  g++ findCPUtime.cpp
+  787  ./a.out > allVMCPUusage
+  788  gedit allVMCPUusage 
+  789  ./a.out > allVMCPUusage
+  790  ./a.out 
+  791  g++ findCPUtime.cpp
+  792  ./a.out 
+  793  g++ findCPUtime.cpp
+  794  ./a.out 
+  795  g++ findCPUtime.cpp
+  796  ./a.out 
+  797  g++ findCPUtime.cpp -o findEachVMTime
+  798  ./findEachVMTime 
+  799  cd /home
+  800  virsh define r2.xml
+  801  cd /home/csisadmin/
+  802  virsh define r2.xml
+  803  cd poojaAkankshaCloud/migration/
+  804  g++ migration.cpp 
+  805  cd /mnt/kvmshared/poojaAkankshaCloud/
+  806  g++ findCPUtime.cpp 
+  807  g++ findCPUtime.cpp -o findEachVMTime 
+  808  virsh define r2.xml 
+  809  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  810  virsh define r2.xml 
+  811  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  812  ifconfig
+  813  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  814  VIR_MIGRATE_UNSAFE
+  815  $VIR_MIGRATE_UNSAFE
+  816  VIR_MIGRATE_UNSAFE=1
+  817  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  818  VIR_MIGRATE_UNSAFE=0
+  819  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  820  brctl show
+  821  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  822  virsh migrate --live VIR_MIGRATE_UNSAFE=1 --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
+  823  scp cpuUsage.sh csisadmin@172.50.86.27:.
+  824  history
+  825  cd /mnt/kvmshared/poojaAkankshaCloud/
+  826  ./cpuUsage.sh 
+  827  sudo nano /et/fstab
+  828  sudo nano /etc/fstab
+  829  rsysinfo
+  830  sudo apt-get install rstat-sever
+  831  sudo apt-get install rstat-server
+  832  sudo apt-get install rstat-client
+  833  rpc.rstatd
+  834  sudo apt-get install rstatd
+  835  rpc.rstatd
+  836  rpc.rstatd start
+  837  sudo rpc.rstatd start
+  838  history
+  839  g++ findCPUtime.cpp -o findEachVMTime 
+  840  g++ findCPUtime.cpp -o findEachVMTime 
+  841  c /mnt/kvmshared/poojaAkankshaCloud/
+  842  cd /mnt/kvmshared/poojaAkankshaCloud/
+  843  g++ findCPUtime.cpp -o findEachVMTime 
+  844  virsh define r2.xml
+  845  g++ findCPUtime.cpp -o findEachVMTime 
+  846  cd /mnt/kvmshared/poojaAkankshaCloud/
+  847  ./init
+  848  g++ init.cpp -o init
+  849  ./init > configLocation.txt 
+  850  history| grep resize
+  851  history > historyPhyNode1

@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo apt-get install rstat-client
+sudo apt-get install rstatd
+sudo rpc.rstatd start
+

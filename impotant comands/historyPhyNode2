@@ -1,0 +1,481 @@
+    1  sudo su
+    2  ls
+    3  sudo apt-get install openssh-server
+    4  tar -xzf hadoop-setup.tar.gz 
+    5  sudo sh disableIpv6.sh 
+    6  sudo sh setupHostsFile.sh 
+    7  sudo sh extractAndConfigureHadoop.sh 
+    8  sudo sh setupHadoopFiles.sh 
+    9  sudo sh copyHadoopConfigFiles.sh 
+   10  java
+   11  sudo apt-get install openjdk-6-jdk -y
+   12  scp hadoop-1.2.1.tar.gz hadoop-setup.tar.gz csisadmin@m-15:/home/csisadmin
+   13  scp hadoop-1.2.1.tar.gz hadoop-setup.tar.gz csisadmin@m-16:/home/csisadmin
+   14  scp hadoop-1.2.1.tar.gz hadoop-setup.tar.gz csisadmin@m-17:/home/csisadmin
+   15  scp hadoop-1.2.1.tar.gz hadoop-setup.tar.gz csisadmin@m-10:/home/csisadmin
+   16  scp hadoop-1.2.1.tar.gz hadoop-setup.tar.gz csisadmin@m-11:/home/csisadmin
+   17  java
+   18  ifconfig
+   19  ls
+   20  rm setupHostsFile.sh 
+   21  sudo sh setupHostsFile.sh 
+   22  exit
+   23  sh setupCluster_client.sh 
+   24  sudo nano /etc/fstab
+   25  exit
+   26  sudo apt-get install g++ -y
+   27  sudo apt-get install sshpass -y
+   28  ifconfig
+   29  sudo init 0
+   30  sudo gedit /etc/default/grub
+   31  sudo update-grub
+   32  cat /etc/fstab
+   33  ls
+   34  cd Desktop/
+   35  ls
+   36  gcc lab5.c
+   37  ls
+   38  ./a.out
+   39  clear
+   40  ls
+   41  vi fifo
+   42  ls
+   43  rm fifo
+   44  ls
+   45  gcc 
+   46  gcc -g lab5.c -o lab5.out
+   47  ls
+   48  rm a.out
+   49  ls
+   50  gdb lab5.out
+   51  clear
+   52  gcc -g lab5.c -o lab5.out
+   53  ./lab5.out
+   54  clear
+   55  ls
+   56  ps
+   57  rm fifo
+   58  ls
+   59  clear
+   60  gcc -g lab5.c -o lab5.out
+   61  ./lab5.out
+   62  gdb lab5.out
+   63  gcc -g lab5.c -o lab5.out
+   64  ./lab5.out
+   65  clear
+   66  gcc -g lab5.c -o lab5.out
+   67  ./lab5.out
+   68  gcc -g lab5.c -o lab5.out
+   69  ./lab5.out
+   70  clear
+   71  gcc -g lab5.c -o lab5.out
+   72  ./lab5.out
+   73  gcc -g lab5.c -o lab5.out
+   74  ./lab5.out
+   75  clear
+   76  gcc -g lab5.c -o lab5.out
+   77  ./lab5.out
+   78  clear
+   79  gcc -g lab5.c -o lab5.out
+   80  ./lab5.out
+   81  clear
+   82  ./lab5.out
+   83  gcc -g lab5.c -o lab5.out
+   84  ./lab5.out
+   85  clear
+   86  gcc -g lab5.c -o lab5.out
+   87  ./lab5.out
+   88  clear
+   89  gcc -g lab5.c -o lab5.out
+   90  ./lab5.out
+   91  gcc -g lab5.c -o lab5.out
+   92  ./lab5.out
+   93  gcc -g lab5.c -o lab5.out
+   94  ./lab5.out
+   95  clear
+   96  gcc -g lab5.c -o lab5.out
+   97  ./lab5.out
+   98  gcc -g lab5.c -o lab5.out
+   99  ./lab5.out
+  100  clear
+  101  gcc -g lab5.c -o lab5.out
+  102  ./lab5.out
+  103  gcc -g lab5.c -o lab5.out
+  104  ./lab5.out
+  105  clear
+  106  gcc -g lab5.c -o lab5.out
+  107  clear
+  108  gcc -g lab5.c -o lab5.out
+  109  ./lab5.out
+  110  clear
+  111  gcc -g lab5.c -o lab5.out
+  112  clear
+  113  ./lab5.out
+  114  clear
+  115  ls
+  116  rm fifo
+  117  ls
+  118  gcc -g lab5.c -o lab5.out
+  119  clear
+  120  gcc -g lab5.c -o lab5.out
+  121  clear
+  122  ls
+  123  ./lab5.out
+  124  clear
+  125  gcc -g lab5.c -o lab5.out
+  126  ./lab5.out
+  127  gdb lab5.out
+  128  clear
+  129  gcc -g lab5.c -o lab5.out
+  130  ./lab5.out
+  131  clear
+  132  exit
+  133  gedit &
+  134  clear
+  135  cd Desktop/
+  136  ls
+  137  gedit lab5.c
+  138  lscpu
+  139  egrep -c '(vmx/svm)' /proc/cpuinfo
+  140  egrep -c '(v-tx/svm)' /proc/cpuinfo
+  141  egrep -c '(V-TX/svm)' /proc/cpuinfo
+  142  egrep -c '(VT-X/svm)' /proc/cpuinfo
+  143  sudo apt-get install kvm 
+  144  sudo apt-get install qemu-system
+  145  virt-manager
+  146  sudo apt-get install virt-manager
+  147  ssh 172.50.86.14
+  148  ssh 172.50.86.13
+  149  ifconfig
+  150  ping google.com
+  151  service network restart
+  152  sudo apt-get purge hadoop*
+  153  ifconfig
+  154  sudo service network-manager start
+  155  sudo service networking restart
+  156  sudo apt-get install qemu-kvm
+  157  sudo apt-get install kvm qemu-system
+  158  sudo apt-get install libvirt-bin libvirt-dev libvirt-doc
+  159  sudo apt-get install virtinst virt-viewer virt-manager
+  160  sudo apt-get install libguestfs-tools
+  161  sudo adduser csisadmin libvirtd
+  162  sudo apt-get install libvirt-bin
+  163  libvirtd
+  164  sudo virt-manager
+  165  cd /home/csisadmin/Desktop/
+  166  gcc -g -Wall test3.c  -lvirt
+  167  ./a.out
+  168  gcc -g -Wall test3.c  -lvirt
+  169  ./a.out
+  170  gcc -g -Wall test3.c  -lvirt
+  171  ./a.out
+  172  gcc -g -Wall test3.c  -lvirt
+  173  ./a.out
+  174  gcc -g -Wall test3.c  -lvirt
+  175  ./a.out
+  176  gcc -g -Wall test3.c  -lvirt
+  177  ./a.out
+  178  lls
+  179  ls
+  180  ./cpuUsage.sh
+  181  sudo ./cpuUsage.sh
+  182  sudo chmod 777 cpuUsage.sh 
+  183  ./cpuUsage.sh 
+  184  virt=top
+  185  virt-top
+  186  sudo apt-get install virt-top
+  187  virt-top
+  188  sudo apt-get install libvirtstats
+  189  sudo apt-get install libvirtstat
+  190  collectd
+  191  sudo apt-get install collectd-core
+  192  service restart collectd
+  193  ifconfig
+  194  service collectd start
+  195  ./configure
+  196  cd /etc
+  197  cd collectd/
+  198  ./configure
+  199  /etc/init.d/collectd restart
+  200  sudo nano /etc/collectd/collection.conf 
+  201  /etc/init.d/collectd restart
+  202  virsh list
+  203  virsh list -all
+  204  virsh list --all
+  205  cd /home/vm
+  206  cd ..
+  207  cd home/
+  208  cd csisadmin/
+  209  cd vm
+  210  virsh list --all
+  211  virt-manager
+  212  sudo virt-manager
+  213  virsh list --all
+  214  virsh cpu-stats 1
+  215  sudo virt-manager
+  216  virsh list --all
+  217  cd /var/lib/libvirt/networks
+  218  cd /var/lib/libvirt/network
+  219  ls
+  220  sudo gedit default.xml
+  221  top
+  222  ping google.com
+  223  ifconfig
+  224  cd Desktop/
+  225  ls > new.txt
+  226  cd ..
+  227  ls
+  228  ls >> new.txt
+  229  ls >> Desktop/new.txt
+  230  cd Desktop/
+  231  ls >> new.txt
+  232  ls >> new1.txt
+  233  virt manager
+  234  virt-manager
+  235  sudo virt-manager
+  236  virsh list
+  237  exit
+  238  #include <stdio.h>
+  239  #include <stdlib.h>
+  240  #include <string.h>
+  241  #include <libvirt/libvirt.h>
+  242  service libvirtd start
+  243  sudo apt-get install libvirt-bin
+  244  ps
+  245  ps -a
+  246  ps --all
+  247  virt-manager
+  248  sudo gedit /etc/libvirt/libvirtd.conf
+  249  /etc/init.d/libvirtd start
+  250  libvirtd -d
+  251  libvirtd -dv
+  252  libvirtd -v
+  253  sudo libvirtd -v
+  254  virt-manager
+  255  ps ax | grep libvirtd
+  256  kill 5260
+  257  sudo kill 5260
+  258  sudo kill 32498
+  259  ps ax | grep libvirtd
+  260  sudo kill 32668
+  261  ps ax | grep libvirtd
+  262  sudo rm /var/run/libvirtd.pid
+  263  sudo libvirtd -v
+  264  sudo libvirtd -dv
+  265  virt-manager
+  266  ifconfig
+  267  sudo chmod 777 /mnt/kvmshared
+  268  scp /home/csisadmin/Desktop/prerna_nfscommands csisadmin@172.50.86.22:./Desktop
+  269  cd Desktop/
+  270  g++ findCPUtime.cpp
+  271  ./a.out 
+  272  g++ findCPUtime.cpp
+  273  ./a.out 
+  274  g++ findCPUtime.cpp
+  275  ./a.out 
+  276  g++ findCPUtime.cpp
+  277  ./a.out 
+  278  history
+  279  history|grep rpc
+  280  history|grep start
+  281  ./a.out 
+  282  g++ findCPUtime.cpp
+  283  ./a.out 
+  284  g++ findCPUtime.cpp
+  285  ./a.out 
+  286  virsh list
+  287  virsh list --all
+  288  g++ findCPUtime.cpp
+  289  ./a.out 
+  290  g++ findCPUtime.cpp
+  291  ./a.out 
+  292  g++ findCPUtime.cpp
+  293  ./a.out 
+  294  g++ findCPUtime.cpp
+  295  ./a.out 
+  296  g++ findCPUtime.cpp
+  297  ./a.out 
+  298  g++ findCPUtime.cpp
+  299  ./a.out 
+  300  g++ findCPUtime.cpp
+  301  ./a.out 
+  302  g++ findCPUtime.cpp
+  303  ./a.out 
+  304  g++ findCPUtime.cpp
+  305  ./a.out 
+  306  g++ findCPUtime.cpp
+  307  ./a.out 
+  308  g++ findCPUtime.cpp
+  309  ./a.out 
+  310  ifconfig
+  311  virsh list
+  312  ls
+  313  cd Desktop/
+  314  ls
+  315  g++ findCPUtime.cpp
+  316  ./a.out
+  317  g++ findCPUtime.cpp
+  318  ./a.out
+  319  g++ findCPUtime.cpp
+  320  ./a.out
+  321  sudo apt-get install nfs-kernel-server
+  322  sudo nano /etc/exports
+  323  sudo exportfs -ar
+  324  sudo exportfs -a
+  325  sudo exportfs -r
+  326  sudo exportfs
+  327  sudo nano /etc/exports
+  328  sudo exportfs -ar
+  329  sudo mkdir /mnt/kvmshared
+  330  sudo exportfs -ar
+  331  /etc/init.d/nfs-kernel-server restart
+  332  sudo mount -t nfsd nfsd /proc/fs/nfsd
+  333  /etc/init.d/rpc.nfsd
+  334  /etc/init.d/nfs-kernel-server restart
+  335  sudo /etc/init.d/nfs-kernel-server restart
+  336  sudo nano /etc/exports
+  337  sudo exportfs -ar
+  338  sudo /etc/init.d/nfs-kernel-server restart
+  339  sudo cp cpuStats.txt /mnt/kvmshared
+  340  g++ findCPUtime.cpp
+  341  clear
+  342  g++ findCPUtime.cpp
+  343  clear
+  344  g++ findCPUtime.cpp
+  345  clear
+  346  g++ findCPUtime.cpp
+  347  ./a.out
+  348  g++ findCPUtime.cpp
+  349  ./a.out
+  350  g++ findCPUtime.cpp
+  351  ./a.out
+  352  g++ findCPUtime.cpp
+  353  ./a.out
+  354  g++ findCPUtime.cpp
+  355  ./a.out
+  356  virsh list
+  357  g++ findCPUtime.cpp
+  358  ./a.out
+  359  g++ findCPUtime.cpp
+  360  ./a.out
+  361  ifconfig
+  362  g++ findCPUtime.cpp
+  363  ./a.out
+  364  g++ findCPUtime.cpp
+  365  ./a.out
+  366  virsh migrate --live --undefinesource test qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  367  chmod 777 /var/lib/libvirt/images/
+  368  sudo chmod 777 /var/lib/libvirt/images/
+  369  virsh migrate --live --undefinesource test qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  370  cd /mnt/kvmshared/
+  371  virsh define newXML.xml
+  372  virsh migrate --live --undefinesource test qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  373  virsh migrate --live --undefinesource vm000 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  374  virt-manager
+  375  ifconfig
+  376  sudo stop network-manager
+  377  ifdown eth0
+  378  gedit /etc/network/interfaces
+  379  sudo gedit /etc/network/interfaces
+  380  ifup br0
+  381  sudo ifup br0
+  382  sudo gedit /etc/sysctl.conf
+  383  sudo  sysctl -p /etc/sysctl.conf 
+  384  sudo iptables -L FORWARD
+  385  virsh define newXML.xml
+  386  ifconfig
+  387  virsh migrate --live --undefinesource vm000 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  388  virsh define newXML.xml
+  389  virsh migrate --live --undefinesource vm000 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  390  virsh migrate --live --undefinesource vmxyz qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  391  virsh define newXML.xml
+  392  virsh migrate --live --undefinesource vmxyz qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  393  sudo chmod 777 /mnt/kvmshared/
+  394  /etc/init.d/nfs-kernel-server restart
+  395  sudo /etc/init.d/nfs-kernel-server restart
+  396  cd Desktop/
+  397  scp findCPUtime.cpp csisadmin172.50.86.22
+  398  scp findCPUtime.cpp csisadmin@172.50.86.22:.
+  399  sudo chmod 755 -r /var/lib/nfs/etab
+  400  sudo chmod -R 755 /var/lib/nfs/etab
+  401  sudo /etc/init.d/nfs-kernel-server restart
+  402  cd Desktop/
+  403  scp roundRobin.cpp 172.50.86.46:.
+  404  virsh list
+  405  /sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
+  406  ifconfig | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
+  407  ifconfig
+  408  ifconfig br0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
+  409  cd /mnt/kvmshared/poojaAkankshaCloud/
+  410  g++ modifyXML.cpp
+  411  g++ modifyXML.cpp -o createVM
+  412  virsh list --all
+  413  ifconfig
+  414  virsh define r2.xml
+  415  virsh migrate --live --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  416  locate roundRobin.cpp
+  417  echo "hell" | cat pooja.txt
+  418  cd Desktop/
+  419  cd ../migration/
+  420  g++ migration
+  421  g++ migration.cpp
+  422  g++ findCPUtime.cpp
+  423  g++ migration.cp
+  424  g++ migration.cpp
+  425  /etc/init.d/nfs-kernel-server restart
+  426  sudo /etc/init.d/nfs-kernel-server restart
+  427  sudo apt-get install apparmor-utils
+  428  sudo aa-status
+  429  sudo aa-complain /usr/sbin/libvirtd
+  430  sudo aa-complain /etc/apparmor.d/libvirt/libvirt-4c6a3df4-0dde-62a5-6994-f7023e969774
+  431  sudo aa-complain /etc/apparmor.d/libvirt/libvirt-20004a35-bbb5-5c6c-7f3b-7164a2c4aa31
+  432  sudo aa-complain /etc/apparmor.d/libvirt/libvirt-20004a35-bbb5-5c6c-7f3b-7164a2c4aa31.files
+  433  sudo aa-complain /etc/apparmor.d/libvirt/libvirt-20004a35-bbb5-5c6c-7f3b-7164a2c4aa31
+  434  cd /home/csisadmin/
+  435  virsh snapshot-create-as vm200 vm200snap --memspec /var/tmp/vm1snap
+  436  virsh snapshot-create-as VM200 VM200snap --memspec /var/tmp/vm1snap
+  437  sudo aa-enforce /usr/sbin/libvirtd
+  438  sudo aa-enforce /etc/apparmor.d/libvirt/libvirt-20004a35-bbb5-5c6c-7f3b-7164a2c4aa31
+  439  virsh snapshot-create-as VM200 VM200snap --memspec /var/tmp/vm1snap
+  440  sudo virsh snapshot-create-as VM200 VM200snap --memspec /var/tmp/vm1snap
+  441  sudo aa-complain /usr/sbin/libvirtd
+  442  virsh snapshot-create-as VM200 VM200snap --memspec /var/tmp/VM200snap
+  443  sudo chmod -R 777 /mnt/kvmshared/
+  444  virsh snapshot-create-as VM200 VM200snap --memspec /var/tmp/VM200snap
+  445  /etc/init.d/apparmor stop
+  446  \history | gre migrate
+  447  \history | grep migrate
+  448  virsh save VM200 file1
+  449  virsh list
+  450  virsh list -all
+  451  virsh list 
+  452  virsh resume file
+  453  virsh resume file1
+  454  virsh save VM200 file1
+  455  virsh resume file1
+  456  sudo virsh resume /home/csisadmin/file1
+  457  sudo virsh restore /home/csisadmin/file1
+  458  history| grep virsh migrate
+  459  history| grep "virsh migrate"
+  460  virsh domname [9]
+  461  virsh domname 9
+  462  virsh list
+  463  virsh domname 10
+  464  cd /mnt/kvmshared/poojaAkankshaCloud/
+  465  virsh define r1.xml
+  466  virsh define r2.xml
+  467  cd /mnt/kvmshared/
+  468  chmod +x rsysinfo 
+  469  ./rsysinfo 
+  470  virsh list
+  471  cd /mnt/kvmshared/poojaAkankshaCloud
+  472  virsh define r2.xml
+  473  sudo nano /etc/exports
+  474  history| virsh migrate
+  475  history| grep "virsh migrate"
+  476  virsh migrate --live --undefinesource VM100 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
+  477  virsh define r1.xml
+  478  cd /mnt/kvmshared/poojaAkankshaCloud/
+  479  virsh define r1.xml
+  480  virsh list
+  481  history>historyPhyNode2

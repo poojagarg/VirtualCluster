@@ -1,0 +1,1000 @@
+  235  gcc reader.c
+  236  ./a.out
+  237  gcc reader.c
+  238  ./a.out
+  239  gcc reader.c
+  240  ./a.out
+  241  gcc reader.c
+  242  ./a.out
+  243  gcc reader.c
+  244  clear
+  245  gcc reader.c
+  246  ./a.out
+  247  gcc reader.c
+  248  ./a.out
+  249  gcc reader.c
+  250  ./a.out
+  251  gcc reader.c
+  252  ./a.out
+  253  gcc reader.c
+  254  ./a.out
+  255  gcc reader.c
+  256  ./a.out
+  257  gcc reader.c
+  258  ./a.out
+  259  gcc reader.c
+  260  ./a.out
+  261  gcc reader.c
+  262  ./a.out
+  263  gcc reader.c
+  264  ./a.out
+  265  gcc reader.c
+  266  ./a.out
+  267  gcc reader.c
+  268  ./a.out
+  269  gcc reader.c
+  270  ./a.out
+  271  gcc reader.c
+  272  ./a.out
+  273  gcc reader.c
+  274  ./a.out
+  275  gcc reader.c
+  276  ./a.out
+  277  gcc reader.c
+  278  ./a.out
+  279  gcc reader.c
+  280  ./a.out
+  281  gcc reader.c
+  282  ./a.out
+  283  gcc reader.c
+  284  ./a.out
+  285  gcc reader.c
+  286  ./a.out
+  287  gcc reader.c
+  288  ./a.out
+  289  gcc reader.c
+  290  ./a.out
+  291  gcc reader.c
+  292  ./a.out
+  293  gcc reader.c
+  294  ./a.out
+  295  gcc reader.c
+  296  ./a.out
+  297  gcc reader.c
+  298  ./a.out
+  299  gcc reader.c
+  300  ./a.out
+  301  gcc reader.c
+  302  ./a.out
+  303  gcc reader.c
+  304  ./a.out
+  305  gcc reader.c
+  306  ./a.out
+  307  gcc reader.c
+  308  ./a.out
+  309  gcc reader.c
+  310  ./a.out
+  311  gcc reader.c
+  312  ./a.out
+  313  gcc reader.c
+  314  ./a.out
+  315  gcc reader.c
+  316  ./a.out
+  317  gcc reader.c
+  318  ./a.out
+  319  gcc reader.c
+  320  ./a.out
+  321  gcc reader.c
+  322  ./a.out
+  323  gcc reader.c
+  324  ./a.out
+  325  gcc reader.c
+  326  ./a.out
+  327  gcc reader.c
+  328  ./a.out
+  329  gcc reader.c
+  330  ./a.out
+  331  gcc reader.c
+  332  ./a.out
+  333  gcc reader.c
+  334  ./a.out
+  335  gcc reader.c
+  336  ./a.out
+  337  gcc reader.c
+  338  ./a.out
+  339  gcc reader.c
+  340  ./a.out
+  341  gcc reader.c
+  342  ./a.out
+  343  gcc reader.c
+  344  ./a.out
+  345  gcc -o reader reader.c tablereader.c
+  346  clear
+  347  gcc reader.c
+  348  ./a.out
+  349  gcc reader.c
+  350  clear
+  351  gcc tablereader.c
+  352  egrep -c 'vmx' /proc/cpuinfo
+  353  sudo apt-get install kvm
+  354  sudo apt-get install libvirt-bin
+  355  sudo apt-get install libvirt-dev
+  356  sudo apt-get install libvirt-doc
+  357  sudo apt-get install virtinst
+  358  sudo apt-get install virt-viewer
+  359  sudo apt-get install virt-manager
+  360  clear
+  361  dpkg --list|grep packagenam
+  362  dpkg --list|grep kvm
+  363  ls
+  364  ls -l
+  365  ls -l -h --human
+  366  clear
+  367  sudo word -minor
+  368  sudo virt-minor
+  369  sudo virt-manager
+  370  cd /var/libvirt/images
+  371  cd ~/var/libvirt/images
+  372  sudo ls 
+  373  cd /var/lib/libvirt/images
+  374  sudo ls
+  375  sudo truncate -r vm1.img
+  376  sudo truncate -r ubuntu.img vm1.img
+  377  sudo truncate -r vm1.img
+  378  sudo ls
+  379  sudo truncate -r vm1.img vm1dev.img
+  380  sudo truncate -r vm1.img
+  381  sudo truncate -r vm1.img vm1dev.img
+  382  sudo truncate -s +5g vm1.img
+  383  sudo virt-resize --resize /dev/sda1=2g --expand /dev/sda2 vm1.img vm1dev.img
+  384  sudo virt-resize --resize /dev/sda1=+2g --expand /dev/sda2 vm1.img vm1dev.img
+  385  sudo virt-resize --resize /dev/sda1=+2G --expand /dev/sda2 vm1.img vm1dev.img
+  386  sudo truncate -s +5g vm1dev.img
+  387  sudo truncate -s +5G vm1.img
+  388  sudo virt-resize --resize /dev/sda1=+2G --expand /dev/sda2 vm1.img vm1dev.img
+  389  sudo adduser vm1user
+  390  sudo adduser vm1user libvirt
+  391  sudo adduser vm1user libvirtd
+  392  ssh vm1user localhost
+  393  sudo ssh vm1user localhost
+  394  sudo ssh VM1USER localhost
+  395  virsh list --all
+  396  sudo ssh vm1 localhost
+  397  virsh --connect qemu://system
+  398  virsh -connect qemu://system
+  399  cd..
+  400  cd/
+  401  cd ~
+  402  sudo ssh vm1user localhost
+  403  virsh list --all | grep shutdown
+  404  virsh -connect qemu:///system
+  405  sudo virsh -connect qemu:///system
+  406  clear
+  407  sudo virsh --connect qemu:///system
+  408  cd /var/lib/libvirt/images
+  409  sudo virsh define newXML.xml
+  410  cd ~
+  411  cd /var/lib/libvirt/images
+  412  sudo virsh define ~./Documents/CloudLab3/newXML.xml
+  413  sudo virsh define ~/Documents/CloudLab3/newXML.xml
+  414  virsh start vm1dev
+  415  sudo virsh define ~/Documents/CloudLab3/newXML.xml
+  416  sudo virsh define ~./Documents/CloudLab3/newXML.xml
+  417  sudo virsh define ~/Documents/CloudLab3/newXML.xml
+  418  virsh start vm2
+  419  virsh stop vm2
+  420  virsh --help
+  421  virsh shutdown vm2
+  422  clear
+  423  virsh list-all
+  424  clear
+  425  virsh
+  426  clear
+  427  brctl show
+  428  sudo virsh net-dumpxml default >> default1.xml
+  429  sudo virsh net-dumpxml default
+  430  sudo virsh net-dumpxml default >> default1.xml
+  431  sudo vi default1.xml
+  432  nano default1.xml
+  433  ifconfig
+  434  sudo virsh net-dumpxml default1.xml
+  435  clear
+  436  ls
+  437  sudo nano default1.xml
+  438  virsh start vm1
+  439  virsh shutdown vm1
+  440  clear
+  441  virsh ls vm1
+  442  clear
+  443  virsh list --all
+  444  sudo nano default1.xml
+  445  sudo stop network-manager
+  446  clear
+  447  sudo gedit /etc/network/interfaces
+  448  ifconfig
+  449  virsh 
+  450  clear
+  451  sudo virsh dumpxml vm1 >> defaultNew.xml
+  452  ls
+  453  ifconfig
+  454  sudo service sshd restart
+  455  clear
+  456  su
+  457  su -hadoopuser
+  458  su hadoopuser
+  459  clear
+  460  sudo
+  461  clear
+  462  su
+  463  su -
+  464  sudo su
+  465  sudo apt-get install nfs-common
+  466  showmount -e 172.50.86.11
+  467  mount -t nfs 172.50.86.11:/home/admin-17/Desktop/cloudProject ~/Desktop/cloudProject
+  468  ~
+  469  mount -t nfs 172.50.86.11:/home/admin-17/Desktop/cloudProject /home/csisadmin/Desktop/cloudProject
+  470  sudo mount -t nfs 172.50.86.11:/home/admin-17/Desktop/cloudProject /home/csisadmin/Desktop/cloudProject
+  471  sudo gedit /etc/fstab
+  472  >>
+  473  showmount -e 172.50.86.11
+  474  sudo gedit /etc/fstab
+  475  cd hadoop/
+  476  cd runQuery/
+  477  javac RunQuery.java
+  478  javah -jni RunQuery
+  479  locate jni
+  480  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  481  gcc -std=c99 -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  482  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  483  javac RunQuery.java
+  484  javah -jni RunQuery
+  485  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  486  java RunQuery
+  487  javac RunQuery.java
+  488  javah -jni RunQuery
+  489  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  490  java RunQuery
+  491  sudo cp /media/csisadmin/Isha/HadoopProject/hadoop-0.18.3-eclipse-plugin.jar /usr/local/hadoop/src/contrib/eclipse-plugin/ 
+  492  locate eclipse
+  493  sudo apt-get install eclipse
+  494  sudo cp /media/csisadmin/Isha/HadoopProject/hadoop-0.18.3-eclipse-plugin.jar /usr/share/eclipse/plugins
+  495  cd /
+  496  sudo cp /media/csisadmin/Isha/HadoopProject/hadoop-0.18.3-eclipse-plugin.jar /usr/share/eclipse/plugins
+  497  sudo apt-get uninstall eclipse
+  498  sudo apt-get remove eclipse
+  499  cd runQuery1/
+  500  javac RunQuery.java 
+  501  javah -jni RunQuery
+  502  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  503  java RunQuery 
+  504  javac RunQuery.java 
+  505  javah -jni RunQuery
+  506  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  507  java RunQuery 
+  508  javac RunQuery.java 
+  509  javah -jni RunQuery
+  510  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  511  java RunQuery 
+  512  javac RunQuery.java 
+  513  javah -jni RunQuery
+  514  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  515  java RunQuery 
+  516  javac RunQuery.java 
+  517  javah -jni RunQuery
+  518  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  519  java RunQuery 
+  520  javac RunQuery.java 
+  521  javah -jni RunQuery
+  522  gcc -o librunquery.so RunQuery.c -shared -fpic -lcrypt -I/usr/lib/jvm/java-7-openjdk-amd64/include -I/usr/lib/jvm/java-7-openjdk-amd64/include/linux
+  523  java RunQuery 
+  524  javac
+  525  cd /
+  526  ssh hduser@172.50.86.48
+  527  cd /home
+  528  ls
+  529  cd admin-17/
+  530  ls
+  531  cd ..
+  532  cd csisadmin/
+  533  ls
+  534  cd java
+  535  ls
+  536  javac java2/try.java
+  537  javac java1/hello.java
+  538  clear
+  539  javac java1/hello.java
+  540  javac java2/try.java
+  541  clear
+  542  javac java2/try.java
+  543  javac java1/hello.java
+  544  clear
+  545  javac java1/hello.java
+  546  clear
+  547  javac java1/hello.java
+  548  javac java2/try.java
+  549  javac java2/try1.java
+  550  java java2/try1
+  551  clear
+  552  cd /home/csisadmin/hadoop
+  553  ls
+  554  cd runQuery/
+  555  ls
+  556  javac -d RunQuery.java
+  557  javac  RunQuery.java
+  558  javac -d RunQuery.java
+  559  man javac
+  560  javac  RunQuery.java
+  561  cd ..
+  562  cd queryParsing/
+  563  ls
+  564  javac Query.java 
+  565  ls
+  566  ls -al
+  567  pwd
+  568  cd ..
+  569  ls
+  570  javac WordCount/WordCount.java 
+  571  cd WordCount/
+  572  javac WordCount.java 
+  573  ifconfig -a
+  574  cd /
+  575  cd /usr/local/hadoop
+  576  cd /
+  577  ssh hadoopuser@172.50.86.19
+  578  sudo apt-get autoremove eclipse
+  579  clear
+  580  sudo apt-get install eclipse
+  581  clear
+  582  su hadoopuser
+  583  su haduser
+  584  su hduser
+  585  su hduser123
+  586  su hduser
+  587  ssh hduser@172.50.86.19
+  588  ssh @172.50.86.19
+  589  clear
+  590  ssh@172.50.86.19
+  591  su hduser@172.50.86.19
+  592  ssh hadoopuser@172.50.86.19
+  593  ssh hduser@172.50.86.48
+  594  cd /home
+  595  ls
+  596  cd admin-17/
+  597  ls
+  598  cd ..
+  599  cd csisadmin
+  600  ls
+  601  cd Desktop/
+  602  ls
+  603  cd cloudassignment/
+  604  ls
+  605  pwd
+  606  ls
+  607  scp /home/csisadmin/Desktop/cloudassignment/mpi csisadmin@172.50.86.48:/home/csisadmin/prerna
+  608  scp -rv /home/csisadmin/Desktop/cloudassignment/mpi csisadmin@172.50.86.48:/home/csisadmin/prerna
+  609  ifconfig
+  610  ssh hduser@172.50.86.48
+  611  ssh hduser@172.50.86.48
+  612  ls
+  613  sd hduser@172.50.86.48
+  614  sudo hduser@172.50.86.48
+  615  ssh hduser@172.50.86.48
+  616  su hduser
+  617  ls
+  618  cd /home
+  619  ls
+  620  cd csisadmin
+  621  ls
+  622  cd Desktop/
+  623  ls
+  624  cd cloudassignment
+  625  ls
+  626  cd mpi
+  627  ls
+  628  clear
+  629  cd MPIPartition/
+  630  ls -al
+  631  make
+  632  clear
+  633  make
+  634  ./run.perl mpi
+  635  chmod 777 MpiPartition.c
+  636  chmod 777 mpi
+  637  ./run.perl mpi
+  638  ls -al
+  639  chmod 777 ./run.perl
+  640  ./run.perl mpi
+  641  cd /home/csisadmin/Desktop/
+  642  ls
+  643  cd cloudassignment/
+  644  ls -al
+  645  cd MPIP
+  646  ls
+  647  cd mpi
+  648  ls -al
+  649  cd MPIPartition/
+  650  clear
+  651  ls -al
+  652  make
+  653  make clean
+  654  make
+  655  ./run.perl mpi
+  656  pwd
+  657  cd Desktop/
+  658  ls
+  659  cd mpi
+  660  ls
+  661  cd MPIPartition/
+  662  ls
+  663  pwd
+  664  owd
+  665  pwd
+  666  clear
+  667  pwd
+  668  cd Desktop/
+  669  ls
+  670  cd mpi
+  671  ls -al
+  672  mpicc -o mpio.o MPIPartition/MpiPartition.c
+  673  clear
+  674  cd MPIPartition/
+  675  mpirun mpio.o
+  676  mpirun ./mpio.o
+  677  make
+  678  clear
+  679  ./run.perl mpi
+  680  chmod 777 run.perl
+  681  ./run.perl mpi
+  682  mpicc -o mpio.o MpiPartition.c
+  683  mpirun mpio.o
+  684  ifconfig
+  685  ls
+  686  cd ..
+  687  pwd
+  688  cd ..
+  689  ls
+  690  cd /home
+  691  ls
+  692  cd csisadmin/
+  693  ls
+  694  cd Desktop/
+  695  ls
+  696  cd mpi1oct/
+  697  ls
+  698  pwd
+  699  ifconfig
+  700  pwd
+  701  cd  MPIReplication/
+  702  ls
+  703  cd ..
+  704  ls -al
+  705  pwd
+  706  cd ..
+  707  ls -al
+  708  pwd
+  709  cd mpi1oct/
+  710  ls
+  711  clear
+  712  ls
+  713  pwd
+  714  scp /home/csisadmin/Desktop/mpi1oct/MPIReplication.tar.gz hduser@172.50.86.48:/home/hduser/mpi
+  715  clear
+  716  scp /home/csisadmin/Desktop/mpi1oct/MPIPartition.tar.gz hduser@172.50.86.48:/home/hduser/mpi
+  717  scp /home/csisadmin/Desktop/mpi1oct/MPIReplication.c hduser@172.50.86.48:/home/hduser/mpi
+  718  scp /home/csisadmin/Desktop/mpi1oct/MPIReplication/MPIReplication.c hduser@172.50.86.48:/home/hduser/mpi
+  719  exit
+  720  virsh
+  721  sudo apt-get install ubuntu-desktop
+  722  sudo apt-get python-libvirt
+  723  sudo apt-get libvirt
+  724  sudo apt-get install python-libvirt
+  725  sudo apt-get install libvirt
+  726  dkpg --list| grep libvirt
+  727  dpkg --list| grep libvirt
+  728  dpkg --list| grep qemu
+  729  python
+  730  dpkg -list | grep libvirt-bin
+  731  dpkg --list | grep libvirt-bin
+  732  dpkg --list | grep qemu-kvm
+  733  sudo apt-get libvirt-bin
+  734  sudo apt-get libvirt
+  735  virt -manager
+  736  virt-manager
+  737  cd /var/lib/libvirt/images
+  738  ls
+  739  sudo ls
+  740  cd ..
+  741  ps
+  742  libvirtd
+  743  libvirt -d
+  744  libvirtd -d
+  745  cd Desktop
+  746  cd ~
+  747  locate libvirtd
+  748  libvirtd -d
+  749  man libvirt
+  750  man libvirtd
+  751  libvirtd -d
+  752  cd Desktop
+  753  gcc try.c
+  754  man libvirtd
+  755  libvirtd --daemon
+  756  libvirtd -d -p file
+  757  libvirtd
+  758  clear
+  759  libvirtd start
+  760  clear
+  761  dpkg --list
+  762  dpkg --list | grep libvirt
+  763  dpkg --list | grep virt
+  764  dpkg --list | grep qemu
+  765  dpkg --list | libvirtd
+  766  sudo apt-get libvirt
+  767  sudo apt-get libvirt-bin
+  768  libvirtd
+  769  pgrep libvirtd
+  770  kill 1854
+  771  sudo chmod 777 /var/lib/libvirtd/images
+  772  sudo chmod 777 /var/lib/libvirt/images
+  773  sudo chmod 777 /var/lib/libvirt/images/
+  774  sudo start network-manager
+  775  ifconfig
+  776  virt-manager
+  777  history
+  778  cd Desktop/cl
+  779  virsh define xmodulo.xml
+  780  virt-manager
+  781  ssh
+  782  sudo apt-get install open
+  783  ssh csisadmin@172.50.86.22
+  784  locate hakuna
+  785  pwd
+  786  cd ..
+  787  ls -a
+  788  cd ..
+  789  ls -a
+  790  cd $HOME/.ssh
+  791  cp /home/csisadmin/cl/hakuna.pub authorized_key
+  792  ls
+  793  cat known_hosts 
+  794  ifconfig
+  795  cd Desktop/cl
+  796  virsh define newXML.xml
+  797  virt-manager
+  798  chmod 777 new.img 
+  799  sudo chmod 777 new.img 
+  800  virsh define newXML.xml
+  801  ssh-keygen -t rsa
+  802  cd /.ssh
+  803  cd $HOME /.ssh
+  804  cp id_rsa.pub authorized_keys
+  805  locate hakuna
+  806  cd virtualclusterPoojaAkanksha/
+  807  g++ modifyXML.cpp
+  808  sudo apt-get install g++
+  809  g++ modifyXML.cpp
+  810  sudo apt-get install g++
+  811  g++ modifyXML.cpp
+  812  ls
+  813  g++ modifyXML.cpp
+  814  ./a.out 
+  815  ls
+  816  g++ modifyXML.cpp
+  817  ./a.out 
+  818  g++ modifyXML.cpp
+  819  ./a.out 
+  820  g++ modifyXML.cpp
+  821  ./a.out 
+  822  g++ modifyXML.cpp
+  823  ./a.out 
+  824  g++ modifyXML.cpp
+  825  ./a.out 
+  826  g++ modifyXML.cpp
+  827  ./a.out 
+  828  g++ modifyXML.cpp
+  829  ./a.out 
+  830  g++ modifyXML.cpp
+  831  ./a.out 
+  832  g++ modifyXML.cpp
+  833  g++ modifyXML.cpp
+  834  ./a.out > configLocation.txt
+  835  g++ modifyXML.cpp
+  836  ./a.out
+  837  g++ modifyXML.cpp
+  838  ./a.out
+  839  g++ modifyXML.cpp
+  840  ./a.out
+  841  g++ modifyXML.cpp
+  842  ./a.out
+  843  g++ modifyXML.cpp
+  844  ./a.out
+  845  g++ modifyXML.cpp
+  846  ./a.out
+  847  ./a.out> configLocation.txt 
+  848  g++ modifyXML.cpp
+  849  ./a.out
+  850  g++ modifyXML.cpp
+  851  ./a.out
+  852  g++ modifyXML.cpp
+  853  ./a.out
+  854  g++ modifyXML.cpp
+  855  ./a.out
+  856  g++ modifyXML.cpp
+  857  ./a.out
+  858  ifconfig
+  859  g++ modifyXML.cpp
+  860  ./a.out
+  861  g++ modifyXML.cpp
+  862  ./a.out
+  863  g++ modifyXML.cpp
+  864  ./a.out
+  865  g++ modifyXML.cpp
+  866  ./a.out
+  867  g++ modifyXML.cpp
+  868  ./a.out
+  869  g++ modifyXML.cpp
+  870  ./a.out
+  871  ./a.out >configLocation.txt 
+  872  g++ modifyXML.cpp
+  873  ./a.out >configLocation.txt 
+  874  ls configLocation.txt 
+  875  gedit configLocation.txt 
+  876  g++ modifyXML.cpp
+  877  gedit configLocation.txt 
+  878  g++ 
+  879  gedit configLocation.txt 
+  880  g++ modifyXML.cpp
+  881  ./a.out 
+  882  g++ modifyXML.cpp
+  883  ./a.out 
+  884  g++ modifyXML.cpp
+  885  ./a.out 
+  886  g++ modifyXML.cpp
+  887  ./a.out 
+  888  g++ modifyXML.cpp
+  889  ./a.out 
+  890  g++ modifyXML.cpp
+  891  ./a.out 
+  892  g++ modifyXML.cpp
+  893  ./a.out 
+  894  g++ modifyXML.cpp
+  895  ./a.out 
+  896  g++ modifyXML.cpp
+  897  ./a.out 
+  898  g++ modifyXML.cpp
+  899  ./a.out 
+  900  g++ modifyXML.cpp
+  901  ./a.out 
+  902  g++ modifyXML.cpp
+  903  ./a.out 
+  904  g++ modifyXML.cpp
+  905  ./a.out 
+  906  g++ modifyXML.cpp
+  907  ./a.out 
+  908  g++ modifyXML.cpp
+  909  ./a.out 
+  910  g++ modifyXML.cpp
+  911  ./a.out 
+  912  g++ modifyXML.cpp
+  913  ./a.out 
+  914  g++ modifyXML.cpp
+  915  ./a.out 
+  916  g++ modifyXML.cpp
+  917  ./a.out 
+  918  ./a.out > configLocation.txt 
+  919  g++ modifyXML.cpp
+  920  ./a.out 
+  921  g++ modifyXML.cpp
+  922  ./a.out 
+  923  g++ modifyXML.cpp
+  924  ./a.out 
+  925  gedit input.txt
+  926  g++ modifyXML.cpp
+  927  ./a.out < input.txt
+  928  cd virtualclusterPoojaAkanksha/
+  929  g++ modifyXML.cpp
+  930  ./a.out < input.txt
+  931  g++ modifyXML.cpp
+  932  ./a.out < input.txt
+  933  virsh define require.xml
+  934  g++ modifyXML.cpp
+  935  virsh define require.xml
+  936  g++ modifyXML.cpp
+  937  virsh define require.xml
+  938  g++ modifyXML.cpp
+  939  ./a.out < input.txt
+  940  g++ modifyXML.cpp
+  941  ./a.out < input.txt
+  942  g++ modifyXML.cpp
+  943  ./a.out < input.txt
+  944  g++ modifyXML.cpp
+  945  ./a.out < input.txt
+  946  g++ modifyXML.cpp
+  947  ./a.out < input.txt
+  948  g++ modifyXML.cpp
+  949  ./a.out < input.txt
+  950  locate defualt.xml|grep network
+  951  locate default.xml|grep network
+  952  scp /etc/libvirt/qemu/networks/default.xml csisadmin@172.50.86.38:.
+  953  scp /etc/libvirt/qemu/networks/default.xml csisadmin@172.50.86.63:.
+  954  scp /etc/libvirt/qemu/networks/default.xml csisadmin@172.50.86.38:.
+  955  ls
+  956  scp /etc/libvirt/qemu/networks/default.xml Admin@172.50.86.38:.
+  957  scp /etc/libvirt/qemu/networks/default.xml admin-17@172.50.86.38:.
+  958  logout
+  959  locate default.xml|grep network
+  960  scp /var/lib/libvirt/network/default.xml  admin-17@172.50.86.38:.
+  961  scp /var/lib/libvirt/network/default.xml  admin-17@172.50.86.38:./pooja
+  962  sudo scp /var/lib/libvirt/network/default.xml  admin-17@172.50.86.38:./pooja
+  963  virt-manager
+  964  ifconfig
+  965  virsh net-list --all
+  966  virsh net-undefine default
+  967  virsh net-list --all
+  968  virsh net-destroy default
+  969  virsh net-list --all
+  970  virsh net-undefine default
+  971  sudo gedit /var/lib/livir
+  972  sudo gedit /var/lib/livirt/network/default.xml
+  973  ifconfig
+  974  whoami
+  975  ls
+  976  virsh net-define default.xml
+  977  virsh net-list --all
+  978  virsh net-start default
+  979  cd virtualclusterPoojaAkanksha/
+  980  virsh define newXML.xml
+  981  cd source\ code/
+  982  virsh define newXML.xml
+  983  sudo virsh define newXML.xml
+  984  sudo chmod 777 new.img 
+  985  sudo virsh define newXML.xml
+  986  sudo gedit /etc/libvirt/qemu.conf 
+  987  virt-manager
+  988  sudo virsh define newXML.xml
+  989  ifconfig
+  990  nano m14
+  991  scp m14 csisadmin @172.50.86.22
+  992  scp m14 csisadmin @172.50.86.22:.
+  993  ssh vm@172.50.86.26
+  994  whoami
+  995  service libvirtd status
+  996  sudo iptables -L
+  997  ping 172.50.86.26
+  998  sudo network-manager
+  999  service network-manager
+ 1000  sudo iptables -L -n
+ 1001  sudo iptables-save > firewall.rules
+ 1002  cd /home
+ 1003  cd csisadmin/Desktop/
+ 1004  ls
+ 1005  chmod 755 disableFirewalls.sh 
+ 1006  ./disableFirewalls.sh 
+ 1007  ping 172.50.86.21
+ 1008  ping 192.168.200.78
+ 1009  ssh vm@192.168.200.78
+ 1010  ifconfig
+ 1011  ssh vm@192.168.200.1
+ 1012  ping 192.168.200.1
+ 1013  ssh vm@192.168.200.1
+ 1014  ping 192.168.200.1
+ 1015  ping 192.168.200.1\
+ 1016  ping 192.168.200.1
+ 1017  ssh vm@192.168.200.1
+ 1018  ifconfig
+ 1019  start network-manager
+ 1020  exit
+ 1021  ssh-keygen -t rsa
+ 1022  ssh-copy-id csisadmin@172.50.86.38
+ 1023  ping 172.50.86.38
+ 1024  ifconfig
+ 1025  ping 172.50.86.27
+ 1026  ping 172.50.86.46
+ 1027  ping 172.50.86.22
+ 1028  ping 172.50.86.38
+ 1029  ifconfig
+ 1030  sudo start network-manager
+ 1031  sudo service network-manager restart
+ 1032  sudo cp -rf /media/csisadmin/New\ Volume/e1000e-3.1.0.2.tar.gz /usr/local/src/e1000e
+ 1033  cd /
+ 1034  exit
+ 1035  ifocnfig
+ 1036  ifconfig
+ 1037  ping 172.50.86.1
+ 1038  ping 192.168.122.1
+ 1039  sudo aptitude bridge-utils
+ 1040  sudo aptitude install bridge-utils
+ 1041  brctl addbr br1
+ 1042  sudo brctl addbr br1
+ 1043  sudo brctl addbr br2
+ 1044  sudo ip addr show
+ 1045  brctl addif br1 eth0
+ 1046  sudo brctl addif br1 eth0
+ 1047  clear
+ 1048  ifconfig
+ 1049  ping 172.50.86.1
+ 1050  ifconfig
+ 1051  sudo gedit /var/lib/libvirt/dnsmasq/default.leases 
+ 1052  sudo gedit /etc/network/interfaces
+ 1053  sudo /etc/init.d/networking stop
+ 1054  sudo /etc/init.d/networking start
+ 1055  service networking restart
+ 1056  service network restart
+ 1057  sudo su
+ 1058  ifconfig
+ 1059  ping 172.50.86.38
+ 1060  ssh -X admin-17@172.50.86.38
+ 1061  sudo apt-get install ssh
+ 1062  ssh -X admin-17@172.50.86.38
+ 1063  ssh-keygen 
+ 1064  ssh -X admin-17@172.50.86.38
+ 1065  ifconfig
+ 1066  sudo init 6
+ 1067  ifconfig
+ 1068  nano macIP.txt
+ 1069  scp macIP.txt csisadmin@172.50.86.22:.
+ 1070  virt-manager
+ 1071  virsh start vm1
+ 1072  cd final/
+ 1073  g++ roundRobin.cpp -o roundRobin
+ 1074  ./roundRobin cluster1 4 1000
+ 1075  ./roundRobin < cluster1
+ 1076  g++ roundRobin.cpp -o roundRobin
+ 1077  ./roundRobin < cluster1
+ 1078  g++ roundRobin.cpp -o roundRobin
+ 1079  ./roundRobin < cluster1
+ 1080  g++ roundRobin.cpp -o roundRobin
+ 1081  ./roundRobin < cluster1
+ 1082  g++ roundRobin.cpp -o roundRobin
+ 1083  ./roundRobin < cluster1
+ 1084  g++ roundRobin.cpp -o roundRobin
+ 1085  ./roundRobin < cluster1
+ 1086  g++ minLoadedNode.cpp -o minLoadedNode
+ 1087  ./minLoadedNode < cluster1
+ 1088  g++ minLoadedNode.cpp -o minLoadedNode
+ 1089  ./minLoadedNode < cluster1
+ 1090  ifconfig
+ 1091  cd final/
+ 1092  g++ migration.cpp
+ 1093  g++ migration.cpp -o migration.cpp
+ 1094  g++ migration.cpp -o migration
+ 1095  ./migration
+ 1096  g++ migration.cpp -o migration
+ 1097  ./migration
+ 1098  g++ migration.cpp -o migration
+ 1099  ./migration
+ 1100  g++ migration.cpp -o migration
+ 1101  ./migration
+ 1102  g++ migration.cpp -o migration
+ 1103  ./migration
+ 1104  g++ migration.cpp -o migration
+ 1105  ./migration
+ 1106  g++ migration.cpp -o migration
+ 1107  ./migration
+ 1108  g++ migration.cpp -o migration
+ 1109  ./migration
+ 1110  g++ migration.cpp -o migration
+ 1111  ./migration
+ 1112  g++ migration.cpp -o migration
+ 1113  ./migration
+ 1114  g++ migration.cpp -o migration
+ 1115  ./migration
+ 1116  g++ migration.cpp -o migration
+ 1117  ./migration
+ 1118  g++ migration.cpp -o migration
+ 1119  ./migration
+ 1120  g++ migration.cpp -o migration
+ 1121  ./migration
+ 1122  ifconfig
+ 1123  g++ migration.cpp -o migration
+ 1124  ./migration
+ 1125  g++ migration.cpp -o migration
+ 1126  ./migration
+ 1127  g++ migration.cpp -o migration
+ 1128  ./migration
+ 1129  rsysinfo
+ 1130  sudo apt-get install rstat-client
+ 1131  rsysinfo
+ 1132  rsysinfo csisadmin@172.50.86.22
+ 1133  rsysinfo "csisadmin@172.50.86.22"
+ 1134  rsysinfo "csisadmin@172.50.86.22"|-v
+ 1135  rsysinfo "csisadmin@172.50.86.22"
+ 1136  rsysinfo csisadmin
+ 1137  rsysinfo 172.50.86.22
+ 1138  rsysinfo 172.50.86.22| grep "load average"| sed "s/.*load average: ([0-9].) .*/\1/"
+ 1139  rsysinfo 172.50.86.22| grep "load average"| sed "s/.* load average: \([0-9.]*\) .*/\1/"
+ 1140  rsysinfo 172.50.86.22| grep "load average"| sed "s/.* load average: \([0-9.]*\) .*/\1/" | awk '{print $1}'
+ 1141  rsysinfo 172.50.86.22| grep "load average"
+ 1142  rsysinfo 172.50.86.22| grep "load average"| sed "s/.* load average: \([0-9.]*\) .*/\1/" | awk '{print $1}'
+ 1143  g++ migration.cpp -o migration
+ 1144  ./migration 
+ 1145  g++ migration.cpp -o migration
+ 1146  ./migration 
+ 1147  rsysinfo 172.50.86.22
+ 1148  rsysinfo 172.50.86.22| grep "load average"| sed "s/.* load average: \([0-9.]*\) .*/\1/" | awk '{print $1}'
+ 1149  g++ migration.cpp -o migration
+ 1150  ./migration 
+ 1151  g++ migration.cpp -o migration
+ 1152  ./migration 
+ 1153  g++ migration.cpp -o migration
+ 1154  ./migration 
+ 1155  rsysinfo 172.50.86.22| grep "load average"| sed "s/.* load average: \([0-9.]*\) .*/\1/"
+ 1156  rsysinfo 172.50.86.22| grep "load average"
+ 1157  g++ migration.cpp -o migration
+ 1158  rsysinfo 172.50.86.22| grep "load average"
+ 1159  ./migration 
+ 1160  g++ migration.cpp -o migration
+ 1161  ./migration 
+ 1162  g++ migration.cpp -o migration
+ 1163  ./migration 
+ 1164  g++ migration.cpp -o migration
+ 1165  ./migration 
+ 1166  g++ migration.cpp -o migration
+ 1167  ./migration 
+ 1168  g++ migration.cpp -o migration
+ 1169  ./migration 
+ 1170  g++ migration.cpp -o migration
+ 1171  ./migration 
+ 1172  g++ migration.cpp -o migration
+ 1173  ./migration 
+ 1174  cat usageStat|sed "s/.* load average: \([0-9.]*\) .*/\1/" | awk '{print $1}'
+ 1175  sudo chmod +x usageStat.sh
+ 1176  g++ migration.cpp -o migration
+ 1177  ./migration 
+ 1178  g++ migration.cpp -o migration
+ 1179  ./migration 
+ 1180  g++ migration.cpp -o migration
+ 1181  ./migration 
+ 1182  g++ migration.cpp -o migration
+ 1183  ./migration 
+ 1184  g++ migration.cpp -o migration
+ 1185  ./migration 
+ 1186  g++ migration.cpp -o migration
+ 1187  ./migration 
+ 1188  g++ migration.cpp -o migration
+ 1189  ./migration 
+ 1190  g++ migration.cpp -o migration
+ 1191  ./migration 
+ 1192  g++ migration.cpp -o migration
+ 1193  ./migration 
+ 1194  1234@bimt
+ 1195  g++ migration.cpp -o migration
+ 1196  ./migration 
+ 1197  g++ migration.cpp -o migration
+ 1198  ./migration 
+ 1199  g++ migration.cpp -o migration
+ 1200  ./migration 
+ 1201  g++ migration.cpp -o migration
+ 1202  ./migration 
+ 1203  g++ migration.cpp -o migration
+ 1204  ./migration 
+ 1205  g++ migration.cpp -o migration
+ 1206  ./migration 
+ 1207  g++ migration.cpp -o migration
+ 1208  ./migration 
+ 1209  g++ migration.cpp -o migration
+ 1210  ./migration 
+ 1211  g++ migration.cpp -o migration
+ 1212  ./migration 
+ 1213  g++ migration.cpp -o migration
+ 1214  ./migration 
+ 1215  g++ migration.cpp -o migration
+ 1216  ./migration 
+ 1217  g++ migration.cpp -o migration
+ 1218  ./migration 
+ 1219  g++ migration.cpp -o migration
+ 1220  ./migration 
+ 1221  g++ migration.cpp -o migration
+ 1222  ./migration 
+ 1223  g++ migration.cpp -o migration
+ 1224  ./migration 
+ 1225  ssh -t remotehost "sudo "
+ 1226  ssh -t 172.50.86.27 "sudo "
+ 1227  ./migration 
+ 1228  cd /home/csisadmin/final/
+ 1229  ./migration
+ 1230  ./roundRobin < cluster1
+ 1231  g++ minLoadedNode.cpp -o minLoaded
+ 1232  ./minLoaded < cluster2
+ 1233  history
+ 1234  history > historyAdministrator
