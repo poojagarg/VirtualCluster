@@ -1,0 +1,19 @@
+Given infrastructure:
+There are n physical nodes given. 
+There is 1 administrator node which is handled by a user. 
+
+Configuration:
+
+In administrator node- Copy the contents of the folder name "administrator".
+Make a file of format as given in cluster1- 
+1st line contains the name of cluster, 2nd line- # of virtual machines in the cluster, 3rd line- RAM size of each virtual node.
+
+Each physical node uses a shared directory. In this project, shared directory was "/mnt/kvmshared/". We kept our project files in the folder "/mnt/kvmshared/poojaAkankshaCloud". Copy the content of folder "Physical infrastructure" and paste in this shared storage.
+
+Run:
+For round robin scheduling, in administrator node, run on terminal with the following command- ./roundRobin clusterFileName
+
+For minimum loaded scheduling, run- ./minLoaded clusterFileName
+
+//For example clusterFileName could be cluster1, cluster2.
+

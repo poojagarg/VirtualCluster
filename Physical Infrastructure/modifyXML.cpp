@@ -152,5 +152,5 @@ int main(int argc, char *argv[]){
 	
 	
 //to change folder of r.xml
-//files on home folder- ounter.txt, r_.xml, 
+//files on home folder- counter.txt, r_.xml, 
 //poojaAkankshaCloud/r_.img	
