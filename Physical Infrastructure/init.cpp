@@ -53,7 +53,7 @@ return -1;
 }//end of find
 //save output in configLocation.txt
 void init(){
-	FILE* fp=fopen("newXML.xml","r");//via Image
+	FILE* fp=fopen("createVM_XML.xml","r");//via Image
 	/*order is important, because old value of fp is taken*/
 	char buf[200];
 	strcpy(buf,"name");
@@ -62,7 +62,7 @@ void init(){
 	cout<<find(buf,fp)<<endl;
 	strcpy(buf,"currentMemory");
 	cout<<find(buf,fp)<<endl;
-	strcpy(buf,"poojaAkankshaCloud/r");//start writing after this
+	strcpy(buf,"poojaCloud/r");//start writing after this
 	cout<<findExact(buf,fp)-1<<endl;
 	strcpy(buf,"<mac address='");
 	cout<<findExact(buf,fp)<<endl;

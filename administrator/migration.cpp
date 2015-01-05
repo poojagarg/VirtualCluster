@@ -1,5 +1,15 @@
-//clusterName: contains IP address of all the VMs in this cluster
-
+//Input- no input
+//Output- migrates highest CPU using Virtual machines of the processors whose CPU usage is more than a user defined threshold
+//files required- physicalInfrastructure
+//utility required- rsysinfo
+/*Algorithm-
+compute usage statistic of all the CPUs
+sort the CPU in descending order of their CPU usage
+Repeat-
+	migrate highest CPU using VM of CPU[start] to CPU[end] 
+	until CPU usage of CPU[start]<threshold 
+*/
+//Things to note- For migration, image of VM to be migrated has to be in shared directory.
 #include<iostream>
 #include<cstdlib>
 #include<cstdio>
@@ -23,7 +33,8 @@ bool compare2(psi a, psi b){
 void migrate(string sourceIP,string destIP){
 	system(("echo "+destIP+" >destIp").c_str());
 	system(("scp destIp csisadmin@"+sourceIP+":.").c_str());
-	system(("ssh csisadmin@"+sourceIP+" <<'ENDSSH'\ncd /mnt/kvmshared/poojaAkankshaCloud\n./domainID.sh\n./findEachVMTime > vmTime").c_str());// file name: VMTime is created in sorted form
+	system(("ssh csisadmin@"+sourceIP+" <<'ENDSSH'\ncd /mnt/kvmshared/poojaCloud\n./domainID.sh\n./findEachVMTime > vmTime").c_str());
+	// file name: VMTime is created in sorted form
 	}
 
 int main(){
@@ -41,7 +52,9 @@ int main(){
 		cpuV[i].first=string(ip);
 		//cout<<cpuV[i].first;
 		system(("rsysinfo "+cpuV[i].first+"|grep load>> usageStat").c_str());
+		//above statement over-writes usage statistic of ith node
 		system("./usageStat.sh");	
+		//appends the usage statistic of ith node in the file finalUsageStat
 }
 	
 	fclose(phyFile);

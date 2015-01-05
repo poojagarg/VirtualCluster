@@ -35,7 +35,7 @@ void prepareName(char* sizeRAM,char* requireFileName,char* counterString,char* m
 	char requireImg[10];
 	char finalRequireXML[10];
 	strcpy(requireImg, requireFileName);
-	strcpy(finalRequireXML,"/home/csisadmin/");
+	strcpy(finalRequireXML,"/mnt/kvmshared/poojaCloud/");
 	strcat(finalRequireXML, requireFileName);
 	strcat(finalRequireXML,".xml");
 	FILE* fpModify=fopen(finalRequireXML,"r+");//via Image
@@ -82,21 +82,18 @@ void findMac(int line, char *mac){
 	fclose(fp);
 }
 void findRequireFileName(char* r, char* counterString,char *macID){
-	FILE* fpCounter=fopen("/home/csisadmin/counter.txt","r");
+	FILE* fpCounter=fopen("/mnt/kvmshared/poojaCloud/counter.txt","r");
 	int counter;
 	fscanf(fpCounter,"%d",&counter);
 	counter++;
 	fclose(fpCounter);
-	fpCounter=fopen("/home/csisadmin/counter.txt","w"); 
+	fpCounter=fopen("/mnt/kvmshared/poojaCloud/counter.txt","w"); 
 	findMac(counter,macID);
 	fprintf(fpCounter, "%d", counter);
 	itoa(counter,counterString);
 	strcat(r,counterString);
 	fclose(fpCounter);
 
-}
-int main__(){
-	return 0;
 }
 
 int main(int argc, char *argv[]){
@@ -124,10 +121,10 @@ int main(int argc, char *argv[]){
 	string str(requireFileName);
 	string str2("VM");
 	str+=".xml";
-	system(("cp newXML.xml /home/csisadmin/"+ str).c_str());
-	//string imgStr(requireFileName);
-	//imgStr+=".img";
-	//system(("cp new.img "+ imgStr).c_str()); //is already copied, so don't copy man!
+	system(("cp createVM_XML.xml /mnt/kvmshared/poojaCloud/"+ str).c_str());
+	string imgStr(requireFileName);
+	imgStr+=".img";
+	system(("cp VMimage.img "+ imgStr).c_str()); 
 	
 	prepareName(sizeRAM,requireFileName, counterString,macID);
 	str2+=counterString;
@@ -137,10 +134,10 @@ int main(int argc, char *argv[]){
 		
 	}
 	char requireXML[200];
-	strcpy(requireXML,"/home/csisadmin/");
+	strcpy(requireXML,"/mnt/kvmshared/poojaCloud/");
 	strcat(requireXML, requireFileName);
 	strcat(requireFileName,".xml");
-	system(("virsh define /home/csisadmin/"+str).c_str());
+	system(("virsh define /mnt/kvmshared/poojaCloud/"+str).c_str());
 	//system(("virsh start "+str2).c_str());
 	numberOfNodes--;	
 	//cout<<"I feel good";
@@ -151,6 +148,3 @@ int main(int argc, char *argv[]){
 
 	
 	
-//to change folder of r.xml
-//files on home folder- counter.txt, r_.xml, 
-//poojaAkankshaCloud/r_.img	

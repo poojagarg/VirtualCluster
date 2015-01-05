@@ -49,8 +49,8 @@ void create(int start,int end,int RAM,int nod){
 		string sNod(cNod);
 		string str(ip[alloted[j].second]);
 		alloted[j].first+=nod;
-		//system(("ssh csisadmin@"+str+" <<'ENDSSH'\ncd poojaAkankshaCloud\n./createVM "+sNod+" "+sRAM+" "+ clusterName).c_str());//do passwordless ssh
-system(("ssh csisadmin@"+str+" <<'ENDSSH'\ncd /mnt/kvmshared/poojaAkankshaCloud\n./createVM "+sNod+" "+sRAM +" "+ clusterName).c_str());//do passwordless ssh
+		//system(("ssh csisadmin@"+str+" <<'ENDSSH'\ncd poojaCloud\n./createVM "+sNod+" "+sRAM+" "+ clusterName).c_str());//do passwordless ssh
+system(("ssh csisadmin@"+str+" <<'ENDSSH'\ncd /mnt/kvmshared/poojaCloud\n./createVM "+sNod+" "+sRAM +" "+ clusterName).c_str());//do passwordless ssh
 		}
 }
 void update(FILE* fp){

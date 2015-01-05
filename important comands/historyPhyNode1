@@ -309,7 +309,7 @@
   309  gedit Prompt.java
   310  exit
   311  virsh 
-  312  cd Desktop/poojaAkankshaCloud/
+  312  cd Desktop/poojaCloud/
   313  g++ modifyXML.cpp 
   314  sudo apt-get install g++
   315  g++ modifyXML.cpp 
@@ -319,7 +319,7 @@
   319  locate modify
   320  locate modify|rep cpp
   321  locate modify|grep cpp
-  322  cd Desktop/poojaAkankshaCloud/source\ code/
+  322  cd Desktop/poojaCloud/source\ code/
   323  ./unVM.sh 
   324  scp /home/csisadmin/Desktop/hello_world.c vm@192.168.122.11:.
   325  scp /home/csisadmin/Desktop/hello_world.c vm@192.168.122.12:/home/vm/Desktop
@@ -328,7 +328,7 @@
   328  cd Desktop/
   329  ls
   330  gedit hello_world.c 
-  331  cd Desktop/poojaAkankshaCloud/
+  331  cd Desktop/poojaCloud/
   332  g++ modifyXML.cpp
   333  ./a.out > configLocation.txt
   334  g++ modifyXML.cpp
@@ -423,7 +423,7 @@
   423  ls
   424  ./a.out < cluster1
   425  cat hostfile.txt
-  426  cd Desktop/poojaAkankshaCloud/deliverable/
+  426  cd Desktop/poojaCloud/deliverable/
   427  ls
   428  cd src/
   429  ls
@@ -435,10 +435,10 @@
   435  virsh list --all
   436  virsh list
   437  ifconfig
-  438  cd Desktop/poojaAkankshaCloud/
+  438  cd Desktop/poojaCloud/
   439  ls
   440  scp -r deliverable/ hduser@172.50.86.22
-  441  cd /home/csisadmin/poojaAkankshaCloud
+  441  cd /home/csisadmin/poojaCloud
   442  g++ modifyXML.cpp
   443  g++ modifyXML.cpp -o createVM
   444  ./createVM 
@@ -459,7 +459,7 @@
   459  virsh -c qemu:///system 
   460  virsh -c qemu:///system lis
   461  virsh -c qemu:///system list
-  462  cd poojaAkankshaCloud/deliverable/
+  462  cd poojaCloud/deliverable/
   463  cd ..
   464  g++ modifyXML.cpp
   465  g++ modifyXML.cpp -o createVM
@@ -476,13 +476,13 @@
   476  ./init > configLocation.txt 
   477  ./createVM < cluster1
   478  virsh list
-  479  cd poojaAkankshaCloud/
+  479  cd poojaCloud/
   480  ls
   481  gedit roundRobin.cpp &
   482  sudo gedit roundRobin.cpp 
   483  scp roundRobin.cpp hduser@172.50.86.28:.
   484  ifconfig
-  485  cd poojaAkankshaCloud/
+  485  cd poojaCloud/
   486  ls
   487  scp roundRobin.cpp csisadmin@172.50.86.22:.
   488  scp roundRobin.cpp hduser@172.50.86.22:.
@@ -509,20 +509,20 @@
   509  ifconfig
   510  ls
   511  logout
-  512  cd poojaAkankshaCloud/
+  512  cd poojaCloud/
   513  logout
-  514  cd poojaAkankshaCloud/
+  514  cd poojaCloud/
   515  ./createVM
   516  logout
-  517  sudo chmod 777 poojaAkankshaCloud/
+  517  sudo chmod 777 poojaCloud/
   518  logout
-  519  cd poojaAkankshaCloud/
+  519  cd poojaCloud/
   520  l
   521  ./createVM 
   522  gedit counter.txt
   523  nano counter.txt
   524  logout
-  525  cd poojaAkankshaCloud/
+  525  cd poojaCloud/
   526  nano counter.txt
   527  virt-manager
   528  sudo virt-manager
@@ -555,7 +555,7 @@
   555  virsh start VM100
   556  virsh start VM200
   557  virsh list --all
-  558  cd poojaAkankshaCloud/
+  558  cd poojaCloud/
   559  virsh define newXML.xml
   560  ifonfig
   561  ifconfig
@@ -581,10 +581,10 @@
   581  ./init > configLocation.txt 
   582  g++ modifyXML.cpp
   583  ./a.out 1 100
-  584  cd poojaAkankshaCloud/
+  584  cd poojaCloud/
   585  g++ modifyXML.cpp -o createVM
   586  ls
-  587  cd poojaAkankshaCloud/
+  587  cd poojaCloud/
   588  ls
   589  logout
   590  ifconfig
@@ -593,16 +593,16 @@
   593  virsh migrate --live --undefinesource vm000 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
   594  scp /home/csisadmin/Desktop/prerna\ cloud_old/vm_migrate csisadmin@172.50.86.27:.
   595  ifconfig
-  596  sudo cp poojaAkankshaCloud/vm1.img /var/lib/libvirt/images/
-  597  sudo chmod 777 poojaAkankshaCloud/vm1.img 
+  596  sudo cp poojaCloud/vm1.img /var/lib/libvirt/images/
+  597  sudo chmod 777 poojaCloud/vm1.img 
   598  sudo nano /etc/fstab
   599  sudo mount 172.50.86.27:/mnt/kvmshared /mnt/kvmshared
   600  gedit /etc/network/interfaces
-  601  cd poojaAkankshaCloud/
+  601  cd poojaCloud/
   602  virsh define r1.xml 
   603  virsh list
   604  virsh cpu-stats 41
-  605  cd poojaAkankshaCloud/
+  605  cd poojaCloud/
   606  nano counter.txt
   607  virsh list
   608  virsh destroy VM100
@@ -642,7 +642,7 @@
   642  virsh list
   643  chmod +x cpu_usage 
   644  ./cpu_usage 
-  645  cd poojaAkankshaCloud/
+  645  cd poojaCloud/
   646  ./createVM 
   647  ./createVM 2 1000
   648  ./cpu_usage 
@@ -650,7 +650,7 @@
   650  ifconfig
   651  sudo gedit /etc/fstab
   652  sudo mount 172.50.86.27:/mnt/kvmshared /mnt/kvmshared
-  653  cd /mnt/kvmshared/poojaAkankshaCloud/
+  653  cd /mnt/kvmshared/poojaCloud/
   654  g++ modifyXML.cpp -o createVM 
   655  ./createVM 2 100 luster1
   656  g++ modifyXML.cpp -o createVM 
@@ -690,7 +690,7 @@
   690  virsh snapshot-create
   691  virsh snapshot-create VM100
   692  virsh net-list
-  693  cd poojaAkankshaCloud/
+  693  cd poojaCloud/
   694  ./createVM 2 1000
   695  gedit cpu_usage 
   696  gedit cpu_usage &
@@ -758,7 +758,7 @@
   758  gedit domainNames 
   759  virsh list | grep running | sed "s/.*\(VM[0-9]*\) .*/\1/" | awk '{print $1}' >> domainNames | wc -l >>domainNames
   760  gedit domainNames 
-  761  cd poojaAkankshaCloud/
+  761  cd poojaCloud/
   762  g++ ./findCPUtime.cpp
   763  g++ findCPUtime.cpp
   764  ./a.out 
@@ -800,9 +800,9 @@
   800  virsh define r2.xml
   801  cd /home/csisadmin/
   802  virsh define r2.xml
-  803  cd poojaAkankshaCloud/migration/
+  803  cd poojaCloud/migration/
   804  g++ migration.cpp 
-  805  cd /mnt/kvmshared/poojaAkankshaCloud/
+  805  cd /mnt/kvmshared/poojaCloud/
   806  g++ findCPUtime.cpp 
   807  g++ findCPUtime.cpp -o findEachVMTime 
   808  virsh define r2.xml 
@@ -822,7 +822,7 @@
   822  virsh migrate --live VIR_MIGRATE_UNSAFE=1 --undefinesource VM200 qemu+ssh://csisadmin@172.50.86.27/system tcp://172.50.86.27
   823  scp cpuUsage.sh csisadmin@172.50.86.27:.
   824  history
-  825  cd /mnt/kvmshared/poojaAkankshaCloud/
+  825  cd /mnt/kvmshared/poojaCloud/
   826  ./cpuUsage.sh 
   827  sudo nano /et/fstab
   828  sudo nano /etc/fstab
@@ -838,12 +838,12 @@
   838  history
   839  g++ findCPUtime.cpp -o findEachVMTime 
   840  g++ findCPUtime.cpp -o findEachVMTime 
-  841  c /mnt/kvmshared/poojaAkankshaCloud/
-  842  cd /mnt/kvmshared/poojaAkankshaCloud/
+  841  c /mnt/kvmshared/poojaCloud/
+  842  cd /mnt/kvmshared/poojaCloud/
   843  g++ findCPUtime.cpp -o findEachVMTime 
   844  virsh define r2.xml
   845  g++ findCPUtime.cpp -o findEachVMTime 
-  846  cd /mnt/kvmshared/poojaAkankshaCloud/
+  846  cd /mnt/kvmshared/poojaCloud/
   847  ./init
   848  g++ init.cpp -o init
   849  ./init > configLocation.txt 

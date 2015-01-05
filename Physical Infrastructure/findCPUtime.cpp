@@ -1,3 +1,7 @@
+/*Algorithm
+Finds CPU usage time of each VM
+Migrates highest CPU using VM from source IP machine to dest IP machine	
+*/
 #include<iostream>
 #include<cstdlib>
 #include<cstdio>
@@ -150,11 +154,11 @@ int main()
 	char domainIDArr[10];
 	itoa(cpuTime[localnumOfVM][0],domainIDArr);
 	string domainID(domainIDArr);
-	cout<<domainID;
-	//system(("virsh domname "+domainID).c_str());	
+	
+	system(("virsh domname "+domainID + ">> domainNameFile").c_str());	
 	FILE* fp2=fopen("domainNameFile","r");
 	char domainNameArr[10];
 	fscanf(fp2,"%s",domainNameArr);
-	string str(domainNameArr);
-	system(("echo sudo virsh migrate --live --undefinesource"+ domainID +"qemu+ssh://csisadmin@"+destIp+"/system tcp://"+destIp).c_str());
+	string domainNameString(domainNameArr);
+	system(("echo sudo virsh migrate --live --undefinesource"+ domainNameString +"qemu+ssh://csisadmin@"+destIp+"/system tcp://"+destIp).c_str());
 }

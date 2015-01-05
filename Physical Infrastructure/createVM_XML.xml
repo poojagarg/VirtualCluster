@@ -1,8 +1,8 @@
 <domain type='kvm'>
-  <name>VM200</name>
-  <uuid>20004a35-bbb5-5c6c-7f3b-7164a2c4aa31</uuid>
+  <name>vm000</name>
+  <uuid>00004a35-bbb5-5c6c-7f3b-7164a2c4aa31</uuid>
   <memory unit='KiB'>1048576</memory>
-  <currentMemory unit='KiB'>1000576</currentMemory>
+  <currentMemory unit='KiB'>1048576</currentMemory>
   <vcpu placement='static'>2</vcpu>
   <os>
     <type arch='x86_64' machine='pc-i440fx-1.5'>hvm</type>
@@ -21,7 +21,7 @@
     <emulator>/usr/bin/kvm</emulator>
     <disk type='file' device='disk'>
       <driver name='qemu' type='raw'/>
-      <source file='/mnt/kvmshared/poojaAkankshaCloud/r200.img'/>
+      <source file='/mnt/kvmshared/poojaCloud/r000.img'/>
       <target dev='vda' bus='virtio'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/>
     </disk>

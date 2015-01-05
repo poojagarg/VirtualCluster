@@ -1,3 +1,0 @@
-19:148
-digit0
-sudo virsh migrate --live --undefinesourceqemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22

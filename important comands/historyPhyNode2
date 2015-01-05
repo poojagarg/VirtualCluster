@@ -406,7 +406,7 @@
   406  ifconfig | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
   407  ifconfig
   408  ifconfig br0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
-  409  cd /mnt/kvmshared/poojaAkankshaCloud/
+  409  cd /mnt/kvmshared/poojaCloud/
   410  g++ modifyXML.cpp
   411  g++ modifyXML.cpp -o createVM
   412  virsh list --all
@@ -461,21 +461,21 @@
   461  virsh domname 9
   462  virsh list
   463  virsh domname 10
-  464  cd /mnt/kvmshared/poojaAkankshaCloud/
+  464  cd /mnt/kvmshared/poojaCloud/
   465  virsh define r1.xml
   466  virsh define r2.xml
   467  cd /mnt/kvmshared/
   468  chmod +x rsysinfo 
   469  ./rsysinfo 
   470  virsh list
-  471  cd /mnt/kvmshared/poojaAkankshaCloud
+  471  cd /mnt/kvmshared/poojaCloud
   472  virsh define r2.xml
   473  sudo nano /etc/exports
   474  history| virsh migrate
   475  history| grep "virsh migrate"
   476  virsh migrate --live --undefinesource VM100 qemu+ssh://csisadmin@172.50.86.22/system tcp://172.50.86.22
   477  virsh define r1.xml
-  478  cd /mnt/kvmshared/poojaAkankshaCloud/
+  478  cd /mnt/kvmshared/poojaCloud/
   479  virsh define r1.xml
   480  virsh list
   481  history>historyPhyNode2

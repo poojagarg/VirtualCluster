@@ -1,19 +1,33 @@
 Given infrastructure:
 There are n physical nodes given. 
-There is 1 administrator node which is handled by a user. 
+There is 1 administrator node which is handled by a user.
+
+file About describes about each file in this project. 
+
+Requirements:
+Packages to install- kvm, qemu-kvm, qemu-system, libvirt-bin, libvirt-doc, libvirt-dev, virtinst virt-viewer virt-manager.
+To check for available package installation
+dpkg –list | grep libvirt-bin
+dpkg –list | grep qemu-kvm
+Also make a shared directory. Instructions are given in important commands/createSharedDirectory-NFS
+You will also have to install rsysinfo in each physical node from Physical Infrastucture/rsysinfo.sh
 
 Configuration:
 
 In administrator node- Copy the contents of the folder name "administrator".
-Make a file of format as given in cluster1- 
+Make a file of format as given in file cluster1- 
 1st line contains the name of cluster, 2nd line- # of virtual machines in the cluster, 3rd line- RAM size of each virtual node.
 
-Each physical node uses a shared directory. In this project, shared directory was "/mnt/kvmshared/". We kept our project files in the folder "/mnt/kvmshared/poojaAkankshaCloud". Copy the content of folder "Physical infrastructure" and paste in this shared storage.
+Each physical node uses a shared directory. In this project, shared directory was "/mnt/kvmshared/". We kept our project files in the folder "/mnt/kvmshared/poojaCloud". Copy the content of folder "Physical infrastructure" and paste in this shared storage.
+Also in this shared directory, keep a disc image file VMimage.img for Virtual machines. In this img file, it will be very handy if you install all the basic softwares which you would be needing like openmpi, shared directory facility, passwordless ssh etc.
+Compile the following files and keep the name of output file as defined in the file 'About'.
+init.cpp, migration.cpp, roundRobin.cpp, minLoadedNode.cpp, createVM.cpp, findCPUtime.cpp
 
-Run:
-For round robin scheduling, in administrator node, run on terminal with the following command- ./roundRobin clusterFileName
+To run:
+For round robin scheduling, in administrator node, run on terminal with the following command- ./roundRobin < clusterFileName
 
-For minimum loaded scheduling, run- ./minLoaded clusterFileName
+For minimum loaded scheduling, run- ./minLoaded < clusterFileName
 
-//For example clusterFileName could be cluster1, cluster2.
+For example clusterFileName could be like the file cluster1, cluster2 in folder administrator.
+Information of such a cluster formed can be found in the file 'clusterFileName' in shared directory. It contains IP address of all the VMs in this cluster.
 
