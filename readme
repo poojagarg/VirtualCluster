@@ -1,16 +1,35 @@
-Given infrastructure:
-There are n physical nodes given. 
-There is 1 administrator node which is handled by a user.
+In this project, cluster virtualization is designed and implemented with the following options and features:
 
-file About describes about each file in this project. 
+1- the abstraction provided is a virtual cluster i.e. the user is able to deploy one or more clusters on the given physical infrastructure.
+
+2- the physical infrastructure may be one stand-alone desktop / laptop computer or a cluster on a local network (i.e. implementation should work in either case and must be demonstrated in both cases).
+
+3- for each virtual cluster (at the time of deploying a cluster): number of (virtual) nodes in the cluster and the amount of main memory are configurable; nodes are homogeneous; 
+
+4- two different scheduling algorithms for virtual machines are implemented
+
+5- virtual machine migration is implemented using load-balancing.
+
+													-*-*-*-
+
+file "About" describes about each file in this project. 
+
+													-*-*-*-
+
+Given infrastructure:
+There are n given physical nodes. There is another 1 administrator node which is handled by a user.
+
+													-*-*-*-
 
 Requirements:
 Packages to install- kvm, qemu-kvm, qemu-system, libvirt-bin, libvirt-doc, libvirt-dev, virtinst virt-viewer virt-manager.
 To check for available package installation
 dpkg –list | grep libvirt-bin
 dpkg –list | grep qemu-kvm
-Also make a shared directory. Instructions are given in important commands/createSharedDirectory-NFS
-You will also have to install rsysinfo in each physical node from Physical Infrastucture/rsysinfo.sh
+Also make a shared directory. Instructions to make it are given in important commands/createSharedDirectory-NFS
+You will also have to install rsysinfo in each physical and administrator node from Physical Infrastucture/rsysinfo.sh.
+													
+													-*-*-*- 
 
 Configuration:
 
@@ -23,6 +42,8 @@ Also in this shared directory, keep a disc image file VMimage.img for Virtual ma
 Compile the following files and keep the name of output file as defined in the file 'About'.
 init.cpp, migration.cpp, roundRobin.cpp, minLoadedNode.cpp, createVM.cpp, findCPUtime.cpp
 
+													-*-*-*-
+
 To run:
 For round robin scheduling, in administrator node, run on terminal with the following command- ./roundRobin < clusterFileName
 
@@ -31,3 +52,4 @@ For minimum loaded scheduling, run- ./minLoaded < clusterFileName
 For example clusterFileName could be like the file cluster1, cluster2 in folder administrator.
 Information of such a cluster formed can be found in the file 'clusterFileName' in shared directory. It contains IP address of all the VMs in this cluster.
 
+													-*-*-*-
